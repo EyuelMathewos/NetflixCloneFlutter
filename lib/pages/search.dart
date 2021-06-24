@@ -111,7 +111,7 @@ class searchState extends State<Search> {
                                   )),
                               TextFormField(
                                 decoration: const InputDecoration(
-                                  hintText: 'Enter your email',
+                                  hintText: 'Search',
                                 ),
                               ),
                             ],

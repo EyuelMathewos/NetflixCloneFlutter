@@ -164,7 +164,7 @@ class watchState extends State<Watch> {
                                             color: Colors.white,
                                             fontSize: 15,
                                           )),
-                                      Text("About movie Detial",
+                                      Text("About movie Detial About movie Detial About movie Detial About movie Detial About movie Detial",
                                           style: TextStyle(
                                             color: Colors.white,
                                           )),

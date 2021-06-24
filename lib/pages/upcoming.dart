@@ -3,7 +3,6 @@ import 'package:flutter_icons/flutter_icons.dart';
 import 'package:netflixclone/JSON/menu.dart';
 import 'package:netflixclone/pages/root.dart';
 
-
 class Upcoming extends StatefulWidget {
   @override
   upcomingState createState() => upcomingState();
@@ -80,9 +79,9 @@ class upcomingState extends State<Upcoming> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Movie Title",
+                              Text("Upcoming Movies",
                                   style: TextStyle(
-                                    fontSize: 15,
+                                    fontSize: 26,
                                     color: Colors.white,
                                   )),
                               Text("Movie Description",

@@ -115,6 +115,11 @@ class upcomingState extends State<Upcoming> {
                                   //width: 150,
                                   height: 80,
                                 ),
+                                Text("Movie Title",
+                                    style: TextStyle(
+                                      fontSize: 15,
+                                      color: Colors.white,
+                                    )),
                               ]),
                             ),
                             //height: 100,

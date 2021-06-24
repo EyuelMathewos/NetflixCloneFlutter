@@ -176,22 +176,6 @@ class watchState extends State<Watch> {
                             //height: 100,
                           ),
                         ); //InkWell
-                        // return Container(
-                        //   height: 100,
-                        //   child: Row(mainAxisAlignment: MainAxisAlignment.start, children: [
-                        //     Column(children: [
-                        //       Image.asset("assets/images/title_img.webp", width: 100)
-                        //     ]),
-                        //     Column(children: [
-                        //       Text("Movie Title",
-                        //           style: TextStyle(
-                        //             fontSize: 15,
-                        //             color: Colors.white,
-                        //             //fontWeight: FontWeight.bold,
-                        //           )),
-                        //     ]),
-                        //   ]),
-                        // );
                       }) //list
                           ), //row
                     ),

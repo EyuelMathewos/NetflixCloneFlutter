@@ -72,7 +72,7 @@ class upcomingState extends State<Upcoming> {
                         height: 80,
                         child: Padding(
                           padding: const EdgeInsets.only(
-                            top: 8,
+                            top: 18,
                             left: 4,
                           ),
                           child: Column(

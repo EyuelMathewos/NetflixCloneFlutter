@@ -106,11 +106,20 @@ class watchState extends State<Watch> {
                             top: 8,
                             left: 8,
                           ),
-                          child: Text("Movie Title",
-                              style: TextStyle(
-                                fontSize: 15,
-                                color: Colors.white,
-                              )),
+                          child: Column(
+                            children: [
+                              Text("Movie Title",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    color: Colors.white,
+                                  )),
+                              Text("Movie Description",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    color: Colors.white,
+                                  )),
+                            ],
+                          ),
                         ),
                       ),
                     ],

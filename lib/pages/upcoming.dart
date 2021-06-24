@@ -109,10 +109,10 @@ class upcomingState extends State<Upcoming> {
                                 top: 4,
                                 bottom: 4,
                               ),
-                              child: Row(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
+                              child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
                                 Image.asset(
                                   "assets/images/search_1.jpg",
-                                  width: 150,
+                                  //width: 150,
                                   height: 80,
                                 ),
                               ]),

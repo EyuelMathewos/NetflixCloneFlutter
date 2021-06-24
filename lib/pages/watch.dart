@@ -119,6 +119,10 @@ class watchState extends State<Watch> {
                                   style: TextStyle(
                                     color: Colors.white,
                                   )),
+                              Text("2016 | +11 | 2016 | Action",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  )),
                             ],
                           ),
                         ),

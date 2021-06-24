@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:netflixclone/JSON/menu.dart';
 import 'package:netflixclone/pages/root.dart';
+import 'package:video_player/video_player.dart';
 
 class Search extends StatefulWidget {
   @override
@@ -9,6 +10,31 @@ class Search extends StatefulWidget {
 }
 
 class searchState extends State<Search> {
+  VideoPlayerController _controller;
+  Future<void> _initializeVideoPlayerFuture;
+
+  @override
+  void initState() {
+    // Create an store the VideoPlayerController. The VideoPlayerController
+    // offers several different constructors to play videos from assets, files,
+    // or the internet.
+    _controller = VideoPlayerController.network(
+      'https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4',
+    );
+
+    _initializeVideoPlayerFuture = _controller.initialize().then((_) => setState(() {}));
+
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    // Ensure disposing of the VideoPlayerController to free up resources.
+    _controller.dispose();
+
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(backgroundColor: Colors.black, resizeToAvoidBottomInset: false, body: getBody());
@@ -64,6 +90,11 @@ class searchState extends State<Search> {
                     ), //row
                   ), //padding
 
+                  Container(
+                    height: 200,
+                    child: VideoPlayer(_controller),
+                  ),
+
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -72,16 +103,20 @@ class searchState extends State<Search> {
                         height: 80,
                         child: Padding(
                           padding: const EdgeInsets.only(
-                            top: 18,
+                            top: 8,
                             left: 4,
                           ),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Search Movies",
+                              Text("Movie Title",
                                   style: TextStyle(
-                                    fontSize: 26,
+                                    fontSize: 15,
+                                    color: Colors.white,
+                                  )),
+                              Text("Movie Description",
+                                  style: TextStyle(
                                     color: Colors.white,
                                   )),
                             ],
@@ -110,15 +145,38 @@ class searchState extends State<Search> {
                                 bottom: 4,
                               ),
                               child: Row(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
-                                Container(
-                                  height: 200,
-                                  decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/search_1.jpg"), fit: BoxFit.cover)),
-                                ),
-                                Text("Movie Title",
-                                    style: TextStyle(
-                                      fontSize: 15,
-                                      color: Colors.white,
-                                    )),
+                                Column(children: [
+                                  Image.asset(
+                                    "assets/images/search_1.jpg",
+                                    width: 150,
+                                    height: 80,
+                                  )
+                                ]),
+                                Column(children: [
+                                  Padding(
+                                    padding: const EdgeInsets.only(
+                                      left: 15,
+                                      top: 8,
+                                    ),
+                                    child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
+                                      Text("Indexed Movie Title",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 15,
+                                          )),
+                                      Text("About movie Detial",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 12,
+                                          )),
+                                      Text("2016 | +11 | 2016 | Action",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 12,
+                                          )),
+                                    ]),
+                                  )
+                                ]),
                               ]),
                             ),
                             //height: 100,

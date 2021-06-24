@@ -110,38 +110,34 @@ class upcomingState extends State<Upcoming> {
                                 bottom: 4,
                               ),
                               child: Row(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
-                                Row(children: [
-                                  Image.asset(
-                                    "assets/images/search_1.jpg",
-                                    width: 150,
-                                    height: 80,
-                                  )
-                                ]),
-                                Row(children: [
-                                  Padding(
-                                    padding: const EdgeInsets.only(
-                                      left: 15,
-                                      top: 8,
-                                    ),
-                                    child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
-                                      Text("Indexed Movie Title",
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 15,
-                                          )),
-                                      Text("About movie Detial",
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 12,
-                                          )),
-                                      Text("2016 | +11 | 2016 | Action",
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 12,
-                                          )),
-                                    ]),
-                                  )
-                                ]),
+                                Image.asset(
+                                  "assets/images/search_1.jpg",
+                                  width: 150,
+                                  height: 80,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(
+                                    left: 15,
+                                    top: 8,
+                                  ),
+                                  child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
+                                    Text("Indexed Movie Title",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 15,
+                                        )),
+                                    Text("About movie Detial",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 12,
+                                        )),
+                                    Text("2016 | +11 | 2016 | Action",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 12,
+                                        )),
+                                  ]),
+                                ),
                               ]),
                             ),
                             //height: 100,

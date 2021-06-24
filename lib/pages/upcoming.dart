@@ -84,10 +84,6 @@ class upcomingState extends State<Upcoming> {
                                     fontSize: 26,
                                     color: Colors.white,
                                   )),
-                              Text("Movie Description",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                  )),
                             ],
                           ),
                         ),
@@ -114,14 +110,14 @@ class upcomingState extends State<Upcoming> {
                                 bottom: 4,
                               ),
                               child: Row(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
-                                Column(children: [
+                                Row(children: [
                                   Image.asset(
                                     "assets/images/search_1.jpg",
                                     width: 150,
                                     height: 80,
                                   )
                                 ]),
-                                Column(children: [
+                                Row(children: [
                                   Padding(
                                     padding: const EdgeInsets.only(
                                       left: 15,

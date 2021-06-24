@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:netflixclone/JSON/menu.dart';
 import 'package:netflixclone/pages/home.dart';
+import 'package:netflixclone/pages/upcoming.dart';
 
 class RootApp extends StatefulWidget {
   @override
@@ -25,9 +26,7 @@ class rootState extends State<RootApp> {
       index: activeTab,
       children: [
         Home(),
-        Center(
-          child: Text("Coming Soon", style: TextStyle(fontSize: 20, color: Colors.white)),
-        ),
+        Upcoming(),
         Center(
           child: Text("Search", style: TextStyle(fontSize: 20, color: Colors.white)),
         ),

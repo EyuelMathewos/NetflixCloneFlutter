@@ -30,9 +30,10 @@ class upcomingState extends State<Upcoming> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Container(
-                          height: 500,
-                          decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/banner.webp"), fit: BoxFit.cover)),
+                        Image.asset(
+                          "assets/images/logo.png",
+                          width: 35,
+                          fit: BoxFit.cover,
                         ),
                         Row(
                           children: [
@@ -109,10 +110,9 @@ class upcomingState extends State<Upcoming> {
                                 bottom: 4,
                               ),
                               child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
-                                Image.asset(
-                                  "assets/images/search_1.jpg",
-                                  //width: 150,
-                                  height: 80,
+                                Container(
+                                  height: 500,
+                                  decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/banner.webp"), fit: BoxFit.cover)),
                                 ),
                                 Text("Movie Title",
                                     style: TextStyle(

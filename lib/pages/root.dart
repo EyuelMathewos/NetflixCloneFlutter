@@ -28,9 +28,7 @@ class rootState extends State<RootApp> {
       children: [
         Home(),
         Upcoming(),
-        Center(
-          child: Text("Search", style: TextStyle(fontSize: 20, color: Colors.white)),
-        ),
+        Search(),
         Center(
           child: Text("Downloads", style: TextStyle(fontSize: 20, color: Colors.white)),
         )

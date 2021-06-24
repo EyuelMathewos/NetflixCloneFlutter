@@ -109,25 +109,18 @@ class searchState extends State<Search> {
                                     fontSize: 26,
                                     color: Colors.white,
                                   )),
+                              TextFormField(
+                                decoration: const InputDecoration(
+                                  hintText: 'Enter your email',
+                                ),
+                              ),
                             ],
                           ),
                         ),
                       ),
                     ],
                   ), //Row
-                  Container(
-                    height: 20,
-                    width: 100,
-                    child: Row(
-                      children: [
-                        TextFormField(
-                          decoration: const InputDecoration(
-                            hintText: 'Enter your email',
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
+
                   SingleChildScrollView(
                     scrollDirection: Axis.vertical,
                     child: Padding(

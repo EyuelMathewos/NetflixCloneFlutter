@@ -94,7 +94,7 @@ class searchState extends State<Search> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        height: 80,
+                        height: 20,
                         child: Padding(
                           padding: const EdgeInsets.only(
                             top: 18,
@@ -116,7 +116,7 @@ class searchState extends State<Search> {
                     ],
                   ), //Row
                   Container(
-                    height: 200,
+                    height: 20,
                   ),
                   SingleChildScrollView(
                     scrollDirection: Axis.vertical,

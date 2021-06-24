@@ -30,10 +30,9 @@ class upcomingState extends State<Upcoming> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Image.asset(
-                          "assets/images/logo.png",
-                          width: 35,
-                          fit: BoxFit.cover,
+                        Container(
+                          height: 500,
+                          decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/banner.webp"), fit: BoxFit.cover)),
                         ),
                         Row(
                           children: [

@@ -111,7 +111,7 @@ class upcomingState extends State<Upcoming> {
                               ),
                               child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
                                 Container(
-                                  height: 500,
+                                  height: 200,
                                   decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/banner.webp"), fit: BoxFit.cover)),
                                 ),
                                 Text("Movie Title",

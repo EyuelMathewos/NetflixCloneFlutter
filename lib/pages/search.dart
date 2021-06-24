@@ -79,7 +79,7 @@ class searchState extends State<Search> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Upcoming Movies",
+                              Text("Search Movies",
                                   style: TextStyle(
                                     fontSize: 26,
                                     color: Colors.white,
@@ -109,7 +109,7 @@ class searchState extends State<Search> {
                                 top: 4,
                                 bottom: 4,
                               ),
-                              child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
+                              child: Row(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
                                 Container(
                                   height: 200,
                                   decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/search_1.jpg"), fit: BoxFit.cover)),

@@ -3,6 +3,7 @@ import 'package:flutter_icons/flutter_icons.dart';
 import 'package:netflixclone/JSON/menu.dart';
 import 'package:netflixclone/pages/home.dart';
 import 'package:netflixclone/pages/upcoming.dart';
+import 'package:netflixclone/pages/search.dart';
 
 class RootApp extends StatefulWidget {
   @override

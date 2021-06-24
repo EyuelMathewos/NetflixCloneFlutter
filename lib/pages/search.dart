@@ -89,11 +89,6 @@ class searchState extends State<Search> {
                       ],
                     ), //row
                   ), //padding
-
-                  Container(
-                    height: 200,
-                  ),
-
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -102,20 +97,16 @@ class searchState extends State<Search> {
                         height: 80,
                         child: Padding(
                           padding: const EdgeInsets.only(
-                            top: 8,
+                            top: 18,
                             left: 4,
                           ),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Movie Title",
+                              Text("Upcoming Movies",
                                   style: TextStyle(
-                                    fontSize: 15,
-                                    color: Colors.white,
-                                  )),
-                              Text("Movie Description",
-                                  style: TextStyle(
+                                    fontSize: 26,
                                     color: Colors.white,
                                   )),
                             ],
@@ -124,6 +115,9 @@ class searchState extends State<Search> {
                       ),
                     ],
                   ), //Row
+                  Container(
+                    height: 200,
+                  ),
                   SingleChildScrollView(
                     scrollDirection: Axis.vertical,
                     child: Padding(

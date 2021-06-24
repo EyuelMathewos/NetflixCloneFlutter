@@ -117,6 +117,7 @@ class searchState extends State<Search> {
                   ), //Row
                   Container(
                     height: 20,
+                    width: 100,
                     child: Row(
                       children: [
                         TextFormField(

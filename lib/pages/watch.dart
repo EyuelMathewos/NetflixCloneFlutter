@@ -158,7 +158,7 @@ class watchState extends State<Watch> {
                                       left: 15,
                                       top: 8,
                                     ),
-                                    child: Column(children: [
+                                    child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
                                       Text("Indexed Movie Title",
                                           style: TextStyle(
                                             color: Colors.white,

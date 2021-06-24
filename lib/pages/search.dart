@@ -117,10 +117,6 @@ class searchState extends State<Search> {
                   ), //Row
                   Container(
                     height: 20,
-                    child: TextFormField(
-            decoration: const InputDecoration(
-              hintText: 'Enter your email',
-            ),
                   ),
                   SingleChildScrollView(
                     scrollDirection: Axis.vertical,

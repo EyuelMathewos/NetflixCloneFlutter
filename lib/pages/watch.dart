@@ -104,7 +104,7 @@ class watchState extends State<Watch> {
                         child: Padding(
                           padding: const EdgeInsets.only(
                             top: 8,
-                            left: 8,
+                            left: 4,
                           ),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.start,

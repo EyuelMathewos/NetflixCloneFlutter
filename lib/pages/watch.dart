@@ -117,7 +117,6 @@ class watchState extends State<Watch> {
                                   )),
                               Text("Movie Description",
                                   style: TextStyle(
-                                    fontSize: 15,
                                     color: Colors.white,
                                   )),
                             ],

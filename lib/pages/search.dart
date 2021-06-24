@@ -94,7 +94,7 @@ class searchState extends State<Search> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        height: 20,
+                        height: 80,
                         child: Padding(
                           padding: const EdgeInsets.only(
                             top: 18,

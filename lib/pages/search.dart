@@ -92,7 +92,6 @@ class searchState extends State<Search> {
 
                   Container(
                     height: 200,
-                    child: VideoPlayer(_controller),
                   ),
 
                   Row(

@@ -119,10 +119,6 @@ class watchState extends State<Watch> {
                                   style: TextStyle(
                                     color: Colors.white,
                                   )),
-                              Text("2016 | +11 | 2016 | Action",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                  )),
                             ],
                           ),
                         ),
@@ -169,6 +165,10 @@ class watchState extends State<Watch> {
                                             fontSize: 15,
                                           )),
                                       Text("About movie Detial",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          )),
+                                      Text("2016 | +11 | 2016 | Action",
                                           style: TextStyle(
                                             color: Colors.white,
                                           )),

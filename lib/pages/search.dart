@@ -107,7 +107,10 @@ class searchState extends State<Search> {
                         fillColor: Colors.black26,
                         filled: true,
                         hintText: 'Search',
-                        hintStyle: TextStyle(color: Colors.white),
+                        hintStyle: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15,
+                        ),
                         suffixIcon: const Icon(
                           Icons.search,
                           color: Colors.white,

@@ -128,7 +128,7 @@ class upcomingState extends State<Upcoming> {
                                         children: [
                                           IconButton(
                                             icon: Icon(
-                                              Icons.account_circle,
+                                              Icons.doorbell,
                                               color: Colors.white,
                                               size: 25,
                                             ),
@@ -142,7 +142,7 @@ class upcomingState extends State<Upcoming> {
                                           ), //Icon button
                                           IconButton(
                                               icon: Icon(
-                                                Icons.collections_bookmark,
+                                                Icons.info_outline,
                                                 color: Colors.white,
                                                 size: 25,
                                               ),

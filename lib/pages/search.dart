@@ -71,28 +71,6 @@ class searchState extends State<Search> {
                       ],
                     ), //row
                   ), //padding
-                  TextField(
-                    controller: _controller,
-                    onSubmitted: (String value) async {
-                      await showDialog<void>(
-                        context: context,
-                        builder: (BuildContext context) {
-                          return AlertDialog(
-                            title: const Text('Thanks!'),
-                            content: Text('You typed "$value", which has length ${value.characters.length}.'),
-                            actions: <Widget>[
-                              TextButton(
-                                onPressed: () {
-                                  Navigator.pop(context);
-                                },
-                                child: const Text('OK'),
-                              ),
-                            ],
-                          );
-                        },
-                      );
-                    },
-                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -119,6 +97,28 @@ class searchState extends State<Search> {
                       ),
                     ],
                   ), //Row
+                  TextField(
+                    controller: _controller,
+                    onSubmitted: (String value) async {
+                      await showDialog<void>(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            title: const Text('Thanks!'),
+                            content: Text('You typed "$value", which has length ${value.characters.length}.'),
+                            actions: <Widget>[
+                              TextButton(
+                                onPressed: () {
+                                  Navigator.pop(context);
+                                },
+                                child: const Text('OK'),
+                              ),
+                            ],
+                          );
+                        },
+                      );
+                    },
+                  ),
 
                   SingleChildScrollView(
                     scrollDirection: Axis.vertical,

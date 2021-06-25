@@ -122,12 +122,14 @@ class watchState extends State<Watch> {
                                   Text("New",
                                       style: TextStyle(
                                         color: Colors.green,
-                                        fontSize: 12,
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold,
                                       )),
                                   Text("2020",
                                       style: TextStyle(
-                                        color: Colors.black12,
-                                        fontSize: 12,
+                                        color: Colors.white,
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold,
                                       )),
                                 ],
                               ),

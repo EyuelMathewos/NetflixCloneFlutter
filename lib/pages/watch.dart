@@ -118,33 +118,32 @@ class watchState extends State<Watch> {
                                   )),
                               //2016 | +11 | 2016 | Action
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text("New",
+                                  Text("New ",
                                       style: TextStyle(
                                         color: Colors.green,
                                         fontSize: 15,
                                         fontWeight: FontWeight.bold,
                                       )),
-                                  Text("2020",
+                                  Text("2020 ",
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 15,
                                         fontWeight: FontWeight.bold,
                                       )),
-                                  Text("18+",
+                                  Text("18+ ",
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 15,
                                         fontWeight: FontWeight.bold,
                                       )),
-                                  Text("Movie",
+                                  Text("Movie ",
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 15,
                                         fontWeight: FontWeight.bold,
                                       )),
-                                  Text("HD",
+                                  Text("HD ",
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 15,

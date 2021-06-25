@@ -112,7 +112,7 @@ class searchState extends State<Search> {
                         enabledBorder: UnderlineInputBorder(
                           borderSide: BorderSide(color: Colors.white),
                         ),
-                        focusedBorder: OutlineInputBorder(
+                        focusedBorder: UnderlineInputBorder(
                           borderSide: BorderSide(color: Colors.greenAccent),
                         )),
                     onSubmitted: (String value) async {

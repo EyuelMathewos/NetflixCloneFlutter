@@ -110,15 +110,15 @@ class upcomingState extends State<Upcoming> {
                                 bottom: 4,
                               ),
                               child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
-                                Container(
-                                  height: 200,
-                                  decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/search_1.jpg"), fit: BoxFit.cover)),
-                                ),
                                 Text("Movie Title",
                                     style: TextStyle(
                                       fontSize: 15,
                                       color: Colors.white,
                                     )),
+                                Container(
+                                  height: 200,
+                                  decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/search_1.jpg"), fit: BoxFit.cover)),
+                                ),
                               ]),
                             ),
                             //height: 100,

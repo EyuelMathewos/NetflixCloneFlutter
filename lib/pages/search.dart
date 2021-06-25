@@ -10,13 +10,11 @@ class Search extends StatefulWidget {
 }
 
 class searchState extends State<Search> {
+  TextEditingController _controller;
   @override
   void initState() {
-    // Create an store the VideoPlayerController. The VideoPlayerController
-    // offers several different constructors to play videos from assets, files,
-    // or the internet.
-
     super.initState();
+    _controller = TextEditingController();
   }
 
   @override
@@ -93,6 +91,28 @@ class searchState extends State<Search> {
                                     fontSize: 26,
                                     color: Colors.white,
                                   )),
+                              TextField(
+                                controller: _controller,
+                                onSubmitted: (String value) async {
+                                  await showDialog<void>(
+                                    context: context,
+                                    builder: (BuildContext context) {
+                                      return AlertDialog(
+                                        title: const Text('Thanks!'),
+                                        content: Text('You typed "$value", which has length ${value.characters.length}.'),
+                                        actions: <Widget>[
+                                          TextButton(
+                                            onPressed: () {
+                                              Navigator.pop(context);
+                                            },
+                                            child: const Text('OK'),
+                                          ),
+                                        ],
+                                      );
+                                    },
+                                  );
+                                },
+                              ),
                             ],
                           ),
                         ),

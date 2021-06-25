@@ -149,20 +149,20 @@ class upcomingState extends State<Upcoming> {
                                               onPressed: null), //Icon button
                                         ],
                                       ), // inner row
-                                      Text("Movie Title",
-                                          style: TextStyle(
-                                            fontSize: 24,
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold,
-                                          )),
-                                      Text("Movie Title Movie Title Movie Title Movie Title Movie TitleMovie Title Movie Title Movie Title Movie Title Movie Title Movie Title Movie Title  Movie Title Movie Title  Movie Title Movie Title  Movie Title Movie Title  Movie Title Movie Title",
-                                          style: TextStyle(
-                                            fontSize: 12,
-                                            color: Colors.white,
-                                          )),
                                     ],
                                   ), //row
                                 ), //padding
+                                Text("Movie Title",
+                                    style: TextStyle(
+                                      fontSize: 24,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    )),
+                                Text("Movie Title Movie Title Movie Title Movie Title Movie TitleMovie Title Movie Title Movie Title Movie Title Movie Title Movie Title Movie Title  Movie Title Movie Title  Movie Title Movie Title  Movie Title Movie Title  Movie Title Movie Title",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.white,
+                                    )),
                               ]),
                             ),
                             //height: 100,

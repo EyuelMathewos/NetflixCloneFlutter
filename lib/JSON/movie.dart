@@ -28,60 +28,16 @@ import 'assets/images/lucytitle.png' as lucytitle;
 
 var movie = [
   {
-    "cover": oldguardcover,
-    "featureimage": oldguardfeature,
-    "title": "The Old Guard",
-    "titleimage": oldguardtitle,
-    "year": "2016",
-    "hours": "2h5m",
-    "movietype": "Action",
-    "about": "Four undying warriors who've secretly protected humanity for centuries become targeted for their mysterious powers just as they discover a new immortal.",
-    "url": "5ed36e35c80cb808ee742a2b"
+    cover: oldguardcover,
+    featureimage: oldguardfeature,
+    title: "The Old Guard",
+    titleimage: oldguardtitle,
+    year: "2016",
+    hours: "2h5m",
+    movietype: "Action",
+    about: "Four undying warriors who've secretly protected humanity for centuries become targeted for their mysterious powers just as they discover a new immortal.",
+    url: "5ed36e35c80cb808ee742a2b"
   },
-  {
-    "cover": assassincover,
-    "featureimage": assassinfeature,
-    "title": "Assassin's Creed",
-    "titleimage": assassintitle,
-    "year": "2020",
-    "hours": "2h5m",
-    "movietype": "Action",
-    "about": "In this adaptation of the critically acclaimed video game franchise, a man on death row is rescued from execution by a mysterious organization.",
-    "url": "5ed36e35c80cb808ee742a2b"
-  },
-  {
-    "cover": spidercover,
-    "featureimage": spiderfeature,
-    "title": "Spider-Man: Far from Home",
-    "titleimage": spidertitle,
-    "year": "2019",
-    "hours": "2h5m",
-    "movietype": "Action",
-    "about": "Even your friendly neighborhood superhero can use a vacation. But a new threat forces Peter Parker to swing into action during a school trip to Europe.",
-    "url": "5ed36e35c80cb808ee742a2b"
-  },
-  {
-    "cover": venomcover,
-    "featureimage": venomfeature,
-    "title": "Venom",
-    "titleimage": venomtitle,
-    "year": "2018",
-    "hours": "2h5m",
-    "movietype": "Action",
-    "about": "A reporter battles a mad scientist in a fight for his life after merging with a snarky alien symbiote that gives him remarkable superpowers.",
-    "url": "5ed36e35c80cb808ee742a2b"
-  },
-  {
-    "cover": assassincover,
-    "featureimage": assassinfeature,
-    "title": "Assassin's Creed",
-    "titleimage": assassintitle,
-    "year": "2020",
-    "hours": "2h5m",
-    "movietype": "Action",
-    "about": "In this adaptation of the critically acclaimed video game franchise, a man on death row is rescued from execution by a mysterious organization.",
-    "url": "5ed36e35c80cb808ee742a2b"
-  }
 ];
 var movie1 = [
   {

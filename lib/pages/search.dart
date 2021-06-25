@@ -117,7 +117,7 @@ class searchState extends State<Search> {
                             color: Colors.white,
                             fontSize: 15,
                           ),
-                          suffixIcon: const Icon(
+                          perffixIcon: const Icon(
                             Icons.search,
                             color: Colors.white,
                           ),

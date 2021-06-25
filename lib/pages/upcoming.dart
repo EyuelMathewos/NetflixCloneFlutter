@@ -156,7 +156,9 @@ class upcomingState extends State<Upcoming> {
                                   padding: EdgeInsets.only(
                                     top: 20,
                                   ),
-                                  child: Column(children: [
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start
+                                    children: [
                                     Text("Movie Title",
                                         style: TextStyle(
                                           fontSize: 24,

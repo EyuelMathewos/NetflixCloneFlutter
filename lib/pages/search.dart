@@ -107,6 +107,7 @@ class searchState extends State<Search> {
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 15,
+                        height: 2.0,
                       ),
                       decoration: InputDecoration(
                           fillColor: Colors.black26,

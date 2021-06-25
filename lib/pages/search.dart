@@ -103,7 +103,7 @@ class searchState extends State<Search> {
                     decoration: InputDecoration(
                         fillColor: Colors.black26,
                         filled: true,
-                        hintText: 'Type',
+                        hintText: 'Search',
                         hintStyle: TextStyle(color: Colors.white),
                         enabledBorder: UnderlineInputBorder(
                           borderSide: BorderSide(color: Colors.white),

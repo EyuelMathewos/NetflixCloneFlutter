@@ -97,7 +97,11 @@ class searchState extends State<Search> {
                       ),
                     ],
                   ), //Row
-                  TextField(
+Padding(
+  padding: EdgeInsets.only(
+    left:15,right:15,
+  ),
+                    TextField(
                     controller: _controller,
                     style: TextStyle(
                       color: Colors.white,
@@ -141,6 +145,7 @@ class searchState extends State<Search> {
                       );
                     },
                   ),
+)
 
                   SingleChildScrollView(
                     scrollDirection: Axis.vertical,

@@ -6,12 +6,12 @@ List items = [
     "text": "Home"
   },
   {
-    "icon": AntDesign.playcircleo,
-    "text": "Coming Soon"
-  },
-  {
     "icon": AntDesign.search1,
     "text": "Search"
+  },
+  {
+    "icon": AntDesign.playcircleo,
+    "text": "Coming Soon"
   },
   {
     "icon": AntDesign.download,

@@ -16,9 +16,5 @@ List items = [
   {
     "icon": AntDesign.download,
     "text": "Downloads"
-  },
-    {
-    "icon": AntDesign.download,
-    "text": "List"
   }
 ];

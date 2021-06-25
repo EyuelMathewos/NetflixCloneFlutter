@@ -76,7 +76,7 @@ class searchState extends State<Search> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        height: 70,
+                        height: 80,
                         child: Padding(
                           padding: const EdgeInsets.only(
                             top: 18,
@@ -99,7 +99,10 @@ class searchState extends State<Search> {
                   ), //Row
                   TextField(
                     controller: _controller,
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                    ),
                     decoration: InputDecoration(
                         fillColor: Colors.black26,
                         filled: true,

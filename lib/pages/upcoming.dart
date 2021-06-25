@@ -107,7 +107,7 @@ class upcomingState extends State<Upcoming> {
                             child: Padding(
                               padding: const EdgeInsets.only(
                                 top: 4,
-                                bottom: 12,
+                                bottom: 20,
                               ),
                               child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
                                 Text("Movie Title",

@@ -6,7 +6,7 @@ List items = [
     "text": "Home"
   },
   {
-    "icon": AntDesign.smart_display_outlined,
+    "icon": AntDesign.video_library_outlined,
     "text": "Coming Soon"
   },
   {

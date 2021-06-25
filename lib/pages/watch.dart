@@ -112,7 +112,7 @@ class watchState extends State<Watch> {
                             children: [
                               Text("Movie Title",
                                   style: TextStyle(
-                                    fontSize: 15,
+                                    fontSize: 28,
                                     color: Colors.white,
                                   )),
                               Text("Movie Description",

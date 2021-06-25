@@ -101,20 +101,18 @@ class searchState extends State<Search> {
                     controller: _controller,
                     style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(
-                        fillColor: Colors.black26,
-                        filled: true,
-                        hintText: 'Search',
-                        hintStyle: TextStyle(color: Colors.red),
-                        prefixIcon: const Icon(
-                          Icons.search,
-                          color: Colors.red,
-                        ),
-                        enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.greenAccent, width: 5.0),
-                        )),
+                      fillColor: Colors.black26,
+                      filled: true,
+                      hintText: 'Search',
+                      hintStyle: TextStyle(color: Colors.white),
+                      prefixIcon: const Icon(
+                        Icons.search,
+                        color: Colors.white,
+                      ),
+                      enabledBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: Colors.white),
+                      ),
+                    ),
                     onSubmitted: (String value) async {
                       await showDialog<void>(
                         context: context,

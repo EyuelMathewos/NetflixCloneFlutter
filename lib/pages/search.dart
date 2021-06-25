@@ -20,14 +20,6 @@ class searchState extends State<Search> {
   }
 
   @override
-  void dispose() {
-    // Ensure disposing of the VideoPlayerController to free up resources.
-    _controller.dispose();
-
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(backgroundColor: Colors.black, resizeToAvoidBottomInset: false, body: getBody());
   }

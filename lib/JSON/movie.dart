@@ -26,7 +26,7 @@ import 'assets/images/lucycover.jpg' as lucycover;
 import 'assets/images/lucyfeature.jpg' as lucyfeature;
 import 'assets/images/lucytitle.png' as lucytitle;
 
-const movie = [
+var movie = [
   {
     "cover": oldguardcover,
     "featureimage": oldguardfeature,
@@ -83,7 +83,7 @@ const movie = [
     "url": "5ed36e35c80cb808ee742a2b"
   }
 ];
-const movie1 = [
+var movie1 = [
   {
     "cover": projectpowercover,
     "featureimage": projectpowerfeature,
@@ -152,7 +152,7 @@ const movie1 = [
   }
 ];
 
-const movie2 = [
+var movie2 = [
   {
     "cover": assassincover,
     "featureimage": assassinfeature,

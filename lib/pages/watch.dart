@@ -164,7 +164,7 @@ class watchState extends State<Watch> {
                         bottom: 18,
                       ),
                       child: Column(
-                          children: List.generate(12, (index) {
+                          children: List.generate(movie.length, (index) {
                         return InkWell(
                           onTap: () {
                             print("container clicked $index");

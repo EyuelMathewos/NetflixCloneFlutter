@@ -129,7 +129,7 @@ class homePageState extends State<Home> {
                       left: 8,
                     ),
                     child: Row(
-                        children: List.generate(movie.length, (index) {
+                        children: List.generate(6, (index) {
                       return InkWell(
                         onTap: () {
                           Navigator.push(

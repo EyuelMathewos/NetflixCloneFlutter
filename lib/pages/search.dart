@@ -104,6 +104,7 @@ class searchState extends State<Search> {
                         fillColor: Colors.black26,
                         filled: true,
                         hintText: 'Type',
+                        hintStyle: TextStyle(color: Colors.white),
                         enabledBorder: UnderlineInputBorder(
                           borderSide: BorderSide(color: Colors.white),
                         )),

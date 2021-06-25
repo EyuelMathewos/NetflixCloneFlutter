@@ -128,7 +128,7 @@ class upcomingState extends State<Upcoming> {
                                         children: [
                                           IconButton(
                                             icon: Icon(
-                                              Icons.info_outline,
+                                              Icons.chat_bubble_outline,
                                               color: Colors.white,
                                               size: 25,
                                             ),

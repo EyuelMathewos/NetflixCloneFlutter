@@ -128,7 +128,7 @@ class upcomingState extends State<Upcoming> {
                                         children: [
                                           IconButton(
                                             icon: Icon(
-                                              Icons.doorbell_rounded,
+                                              Icons.info_outline,
                                               color: Colors.white,
                                               size: 25,
                                             ),

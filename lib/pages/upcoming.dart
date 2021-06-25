@@ -160,7 +160,7 @@ class upcomingState extends State<Upcoming> {
                                     )),
                                 Text("Movie Title Movie Title Movie Title Movie Title Movie TitleMovie Title Movie Title Movie Title Movie Title Movie Title Movie Title Movie Title  Movie Title Movie Title  Movie Title Movie Title  Movie Title Movie Title  Movie Title Movie Title",
                                     style: TextStyle(
-                                      fontSize: 12,
+                                      fontSize: 8,
                                       color: Colors.white,
                                     )),
                               ]),

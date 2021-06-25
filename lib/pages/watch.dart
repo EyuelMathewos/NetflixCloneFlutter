@@ -116,11 +116,15 @@ class watchState extends State<Watch> {
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
                                   )),
-                              Text("2016 | +11 | 2016 | Action",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 12,
-                                  )),
+                              Row(
+                                children: [
+                                  Text("2016 | +11 | 2016 | Action",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 12,
+                                      )),
+                                ],
+                              ),
                             ],
                           ),
                         ),

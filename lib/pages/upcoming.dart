@@ -153,22 +153,23 @@ class upcomingState extends State<Upcoming> {
                                   ), //row
                                 ), //padding
                                 Padding(
-                                  padding: EdgeInsets.only(top:20,),
-                                                                  child: Container(
-                                                                    Text("Movie Title",
-                                    style: TextStyle(
-                                      fontSize: 24,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
-                                    )),
-                                Text("Movie Title Movie Title Movie Title Movie Title Movie TitleMovie Title Movie Title Movie Title Movie Title Movie Title Movie Title Movie Title  Movie Title Movie Title  Movie Title Movie Title  Movie Title Movie Title  Movie Title Movie Title",
-                                    style: TextStyle(
-                                      fontSize: 12,
-                                      color: Colors.white,
-                                    )),
-                                                                  ),
+                                  padding: EdgeInsets.only(
+                                    top: 20,
+                                  ),
+                                  child: Column(children: [
+                                    Text("Movie Title",
+                                        style: TextStyle(
+                                          fontSize: 24,
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        )),
+                                    Text("Movie Title Movie Title Movie Title Movie Title Movie TitleMovie Title Movie Title Movie Title Movie Title Movie Title Movie Title Movie Title  Movie Title Movie Title  Movie Title Movie Title  Movie Title Movie Title  Movie Title Movie Title",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          color: Colors.white,
+                                        )),
+                                  ]),
                                 ),
-
                               ]),
                             ),
                             //height: 100,

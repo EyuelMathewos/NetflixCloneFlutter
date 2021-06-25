@@ -128,7 +128,7 @@ class upcomingState extends State<Upcoming> {
                                         children: [
                                           IconButton(
                                             icon: Icon(
-                                              Icons.bluetooth_disabled,
+                                              Icons.account_circle,
                                               color: Colors.white,
                                               size: 25,
                                             ),

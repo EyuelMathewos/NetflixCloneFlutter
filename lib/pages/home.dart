@@ -175,7 +175,7 @@ class homePageState extends State<Home> {
                             IconButton(
                                 icon: Icon(
                                   Icons.collections_bookmark,
-                                  color: Colors.orange,
+                                  color: Colors.white,
                                   size: 25,
                                 ),
                                 onPressed: null), //Icon button

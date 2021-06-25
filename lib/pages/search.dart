@@ -190,6 +190,7 @@ class searchState extends State<Search> {
                                           style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 15,
+                                            fontWeight: FontWeight.bold,
                                           )),
                                       Text("About movie Detial",
                                           style: TextStyle(

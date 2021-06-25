@@ -109,11 +109,6 @@ class searchState extends State<Search> {
                                     fontSize: 26,
                                     color: Colors.white,
                                   )),
-                              TextFormField(
-                                decoration: const InputDecoration(
-                                  hintText: 'Search',
-                                ),
-                              ),
                             ],
                           ),
                         ),

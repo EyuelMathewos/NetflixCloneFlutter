@@ -53,7 +53,7 @@ class upcomingState extends State<Upcoming> {
                             ), //Icon button
                             IconButton(
                                 icon: Icon(
-                                  Icons.collections_bookmark,
+                                  Icons.account_circle,
                                   color: Colors.white,
                                   size: 25,
                                 ),

@@ -118,7 +118,7 @@ class homePageState extends State<Home> {
                   ],
                 ), //col
                 SizedBox(
-                  height: 80,
+                  height: 20,
                 ),
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,

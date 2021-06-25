@@ -118,6 +118,7 @@ class watchState extends State<Watch> {
                                   )),
                               //2016 | +11 | 2016 | Action
                               Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text("New",
                                       style: TextStyle(

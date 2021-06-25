@@ -110,17 +110,6 @@ class upcomingState extends State<Upcoming> {
                                 bottom: 20,
                               ),
                               child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
-                                Text("Movie Title",
-                                    style: TextStyle(
-                                      fontSize: 24,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
-                                    )),
-                                Text("Movie Title Movie Title Movie Title Movie Title Movie TitleMovie Title Movie Title Movie Title Movie Title Movie Title Movie Title Movie Title  Movie Title Movie Title  Movie Title Movie Title  Movie Title Movie Title  Movie Title Movie Title",
-                                    style: TextStyle(
-                                      fontSize: 12,
-                                      color: Colors.white,
-                                    )),
                                 Container(
                                   height: 200,
                                   decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/search_1.jpg"), fit: BoxFit.cover)),
@@ -139,7 +128,7 @@ class upcomingState extends State<Upcoming> {
                                         children: [
                                           IconButton(
                                             icon: Icon(
-                                              Icons.arrow_back,
+                                              Icons.bluetooth_disabled,
                                               color: Colors.white,
                                               size: 25,
                                             ),
@@ -160,6 +149,17 @@ class upcomingState extends State<Upcoming> {
                                               onPressed: null), //Icon button
                                         ],
                                       ), // inner row
+                                      Text("Movie Title",
+                                          style: TextStyle(
+                                            fontSize: 24,
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.bold,
+                                          )),
+                                      Text("Movie Title Movie Title Movie Title Movie Title Movie TitleMovie Title Movie Title Movie Title Movie Title Movie Title Movie Title Movie Title  Movie Title Movie Title  Movie Title Movie Title  Movie Title Movie Title  Movie Title Movie Title",
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                            color: Colors.white,
+                                          )),
                                     ],
                                   ), //row
                                 ), //padding

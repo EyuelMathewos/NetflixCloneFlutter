@@ -113,7 +113,7 @@ class searchState extends State<Search> {
                           borderSide: BorderSide(color: Colors.white),
                         ),
                         focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.greenAccent),
+                          borderSide: BorderSide(color: Colors.red),
                         )),
                     onSubmitted: (String value) async {
                       await showDialog<void>(

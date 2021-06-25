@@ -99,7 +99,7 @@ class searchState extends State<Search> {
                   ), //Row
                   TextField(
                     controller: _controller,
-                    fillColor: Colors.white,
+                    style: TextStyle(color: Colors.red),
                     onSubmitted: (String value) async {
                       await showDialog<void>(
                         context: context,

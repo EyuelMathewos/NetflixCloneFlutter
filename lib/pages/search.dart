@@ -97,55 +97,56 @@ class searchState extends State<Search> {
                       ),
                     ],
                   ), //Row
-Padding(
-  padding: EdgeInsets.only(
-    left:15,right:15,
-  ),
-                    TextField(
-                    controller: _controller,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 15,
+                  Padding(
+                    padding: EdgeInsets.only(
+                      left: 15,
+                      right: 15,
                     ),
-                    decoration: InputDecoration(
-                        fillColor: Colors.black26,
-                        filled: true,
-                        hintText: 'Search',
-                        hintStyle: TextStyle(
-                          color: Colors.white,
-                          fontSize: 15,
-                        ),
-                        suffixIcon: const Icon(
-                          Icons.search,
-                          color: Colors.white,
-                        ),
-                        enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white),
-                        ),
-                        focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.red),
-                        )),
-                    onSubmitted: (String value) async {
-                      await showDialog<void>(
-                        context: context,
-                        builder: (BuildContext context) {
-                          return AlertDialog(
-                            title: const Text('Thanks!'),
-                            content: Text('You typed "$value", which has length ${value.characters.length}.'),
-                            actions: <Widget>[
-                              TextButton(
-                                onPressed: () {
-                                  Navigator.pop(context);
-                                },
-                                child: const Text('OK'),
-                              ),
-                            ],
-                          );
-                        },
-                      );
-                    },
+                    child: TextField(
+                      controller: _controller,
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 15,
+                      ),
+                      decoration: InputDecoration(
+                          fillColor: Colors.black26,
+                          filled: true,
+                          hintText: 'Search',
+                          hintStyle: TextStyle(
+                            color: Colors.white,
+                            fontSize: 15,
+                          ),
+                          suffixIcon: const Icon(
+                            Icons.search,
+                            color: Colors.white,
+                          ),
+                          enabledBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(color: Colors.white),
+                          ),
+                          focusedBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(color: Colors.red),
+                          )),
+                      onSubmitted: (String value) async {
+                        await showDialog<void>(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              title: const Text('Thanks!'),
+                              content: Text('You typed "$value", which has length ${value.characters.length}.'),
+                              actions: <Widget>[
+                                TextButton(
+                                  onPressed: () {
+                                    Navigator.pop(context);
+                                  },
+                                  child: const Text('OK'),
+                                ),
+                              ],
+                            );
+                          },
+                        );
+                      },
+                    ),
                   ),
-)
 
                   SingleChildScrollView(
                     scrollDirection: Axis.vertical,

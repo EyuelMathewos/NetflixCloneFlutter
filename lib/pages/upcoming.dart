@@ -115,7 +115,7 @@ class upcomingState extends State<Upcoming> {
                                       fontSize: 24,
                                       color: Colors.white,
                                     )),
-                                Text("Movie Title Movie Title Movie Title Movie Title Movie Title",
+                                Text("Movie Title Movie Title Movie Title Movie Title Movie TitleMovie Title Movie Title Movie Title Movie Title Movie Title",
                                     style: TextStyle(
                                       fontSize: 12,
                                       color: Colors.white,

@@ -131,7 +131,7 @@ class upcomingState extends State<Upcoming> {
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
                                       Image.asset(
-                                        "assets/images/logo.png",
+                                        "assets/images/title_img.webp",
                                         width: 35,
                                         fit: BoxFit.cover,
                                       ),

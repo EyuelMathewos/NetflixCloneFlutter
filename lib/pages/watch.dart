@@ -114,6 +114,7 @@ class watchState extends State<Watch> {
                                   style: TextStyle(
                                     fontSize: 28,
                                     color: Colors.white,
+                                    fontWeight: FontWeight.bold,
                                   )),
                               Text("Movie Description",
                                   style: TextStyle(

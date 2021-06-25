@@ -112,7 +112,7 @@ class upcomingState extends State<Upcoming> {
                               child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
                                 Text("Movie Title",
                                     style: TextStyle(
-                                      fontSize: 15,
+                                      fontSize: 28,
                                       color: Colors.white,
                                     )),
                                 Text("Movie Title Movie Title Movie Title Movie Title Movie Title",

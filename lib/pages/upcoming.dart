@@ -152,7 +152,10 @@ class upcomingState extends State<Upcoming> {
                                     ],
                                   ), //row
                                 ), //padding
-                                Text("Movie Title",
+                                Padding(
+                                  padding: EdgeInsets.only(top:20,),
+                                                                  child: Container(
+                                                                    Text("Movie Title",
                                     style: TextStyle(
                                       fontSize: 24,
                                       color: Colors.white,
@@ -163,6 +166,9 @@ class upcomingState extends State<Upcoming> {
                                       fontSize: 12,
                                       color: Colors.white,
                                     )),
+                                                                  ),
+                                ),
+
                               ]),
                             ),
                             //height: 100,

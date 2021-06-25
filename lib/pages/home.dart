@@ -129,8 +129,8 @@ class homePageState extends State<Home> {
                       left: 8,
                     ),
                     child: Row(
-                        children: List.generate(6, (index) {
-                      return InkWell(
+                        children: movie.map(m,i){
+                          return InkWell(
                         onTap: () {
                           Navigator.push(
                             context,
@@ -151,7 +151,7 @@ class homePageState extends State<Home> {
                           ),
                         ),
                       );
-                    }) //list
+                        } //list
                         ), //row
                   ),
                 ), //scroll view

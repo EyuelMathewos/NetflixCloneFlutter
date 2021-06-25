@@ -100,7 +100,7 @@ class searchState extends State<Search> {
                   Padding(
                     padding: EdgeInsets.only(
                       left: 15,
-                      right: 40,
+                      right: 80,
                     ),
                     child: TextField(
                       controller: _controller,

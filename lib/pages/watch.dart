@@ -121,7 +121,7 @@ class watchState extends State<Watch> {
                                 children: [
                                   Text("New",
                                       style: TextStyle(
-                                        color: Colors.green(),
+                                        color: Colors.green,
                                         fontSize: 12,
                                       )),
                                   Text("2020",

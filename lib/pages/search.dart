@@ -107,7 +107,7 @@ class searchState extends State<Search> {
                         hintStyle: TextStyle(color: Colors.white),
                         prefixIcon: const Icon(
                           Icons.search,
-                          color: Colors.green,
+                          color: Colors.red,
                         ),
                         enabledBorder: UnderlineInputBorder(
                           borderSide: BorderSide(color: Colors.white),

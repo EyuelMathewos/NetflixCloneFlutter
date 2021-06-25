@@ -91,28 +91,6 @@ class searchState extends State<Search> {
                                     fontSize: 26,
                                     color: Colors.white,
                                   )),
-                              TextField(
-                                controller: _controller,
-                                onSubmitted: (String value) async {
-                                  await showDialog<void>(
-                                    context: context,
-                                    builder: (BuildContext context) {
-                                      return AlertDialog(
-                                        title: const Text('Thanks!'),
-                                        content: Text('You typed "$value", which has length ${value.characters.length}.'),
-                                        actions: <Widget>[
-                                          TextButton(
-                                            onPressed: () {
-                                              Navigator.pop(context);
-                                            },
-                                            child: const Text('OK'),
-                                          ),
-                                        ],
-                                      );
-                                    },
-                                  );
-                                },
-                              ),
                             ],
                           ),
                         ),

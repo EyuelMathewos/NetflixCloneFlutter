@@ -100,6 +100,7 @@ class searchState extends State<Search> {
                   TextField(
                     controller: _controller,
                     style: TextStyle(color: Colors.white),
+                    hintText: 'Type',
                     decoration: InputDecoration(
                         fillColor: Colors.black26,
                         filled: true,

@@ -125,6 +125,44 @@ class upcomingState extends State<Upcoming> {
                                   height: 200,
                                   decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/search_1.jpg"), fit: BoxFit.cover)),
                                 ),
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 10),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Image.asset(
+                                        "assets/images/logo.png",
+                                        width: 35,
+                                        fit: BoxFit.cover,
+                                      ),
+                                      Row(
+                                        children: [
+                                          IconButton(
+                                            icon: Icon(
+                                              Icons.arrow_back,
+                                              color: Colors.white,
+                                              size: 25,
+                                            ),
+                                            onPressed: () {
+                                              Navigator.push(
+                                                context,
+                                                MaterialPageRoute(builder: (context) => RootApp()),
+                                              );
+                                              print("home clicked");
+                                            },
+                                          ), //Icon button
+                                          IconButton(
+                                              icon: Icon(
+                                                Icons.collections_bookmark,
+                                                color: Colors.white,
+                                                size: 25,
+                                              ),
+                                              onPressed: null), //Icon button
+                                        ],
+                                      ), // inner row
+                                    ],
+                                  ), //row
+                                ), //padding
                               ]),
                             ),
                             //height: 100,

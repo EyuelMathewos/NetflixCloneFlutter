@@ -10,13 +10,12 @@ class Search extends StatefulWidget {
 }
 
 class searchState extends State<Search> {
-  TextEditingController _textController;
   @override
   void initState() {
     // Create an store the VideoPlayerController. The VideoPlayerController
     // offers several different constructors to play videos from assets, files,
     // or the internet.
-    _textController = TextEditingController(text: 'initial text');
+
     super.initState();
   }
 
@@ -102,7 +101,6 @@ class searchState extends State<Search> {
                                     fontSize: 26,
                                     color: Colors.white,
                                   )),
-                              CupertinoSearchTextField(controller: _textController),
                             ],
                           ),
                         ),

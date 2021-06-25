@@ -92,6 +92,7 @@ class searchState extends State<Search> {
                                     color: Colors.white,
                                   )),
                               TextField(
+                                maxlines: 2,
                                 controller: _controller,
                                 onSubmitted: (String value) async {
                                   await showDialog<void>(
@@ -102,7 +103,6 @@ class searchState extends State<Search> {
                                         content: Text('You typed "$value", which has length ${value.characters.length}.'),
                                         actions: <Widget>[
                                           TextButton(
-                                            maxlines: 2,
                                             onPressed: () {
                                               Navigator.pop(context);
                                             },

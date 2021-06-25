@@ -101,7 +101,7 @@ class searchState extends State<Search> {
                     controller: _controller,
                     style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(
-                        fillColor: Colors.white,
+                        fillColor: Colors.black26,
                         filled: true,
                         enabledBorder: UnderlineInputBorder(
                           borderSide: BorderSide(color: Colors.white),

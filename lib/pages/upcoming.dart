@@ -132,7 +132,7 @@ class upcomingState extends State<Upcoming> {
                                     children: [
                                       Image.asset(
                                         "assets/images/title_img.webp",
-                                        width: 100,
+                                        width: 150,
                                         fit: BoxFit.cover,
                                       ),
                                       Row(

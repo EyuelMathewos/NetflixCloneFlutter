@@ -127,6 +127,9 @@ class searchState extends State<Search> {
                           focusedBorder: UnderlineInputBorder(
                             borderSide: BorderSide(color: Colors.red),
                           )),
+                      onChanged: (text) {
+                        print('First text field: $text');
+                      },
                       onSubmitted: (String value) async {
                         await showDialog<void>(
                           context: context,

@@ -115,6 +115,11 @@ class upcomingState extends State<Upcoming> {
                                       fontSize: 15,
                                       color: Colors.white,
                                     )),
+                                Text("Movie Title Movie Title Movie Title Movie Title Movie Title",
+                                    style: TextStyle(
+                                      fontSize: 15,
+                                      color: Colors.white,
+                                    )),
                                 Container(
                                   height: 200,
                                   decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/search_1.jpg"), fit: BoxFit.cover)),

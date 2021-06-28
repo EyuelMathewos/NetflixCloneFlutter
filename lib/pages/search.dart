@@ -160,6 +160,7 @@ class searchState extends State<Search> {
                         bottom: 18,
                       ),
                       child: Column(
+                        
                           children: List.generate(movie.length, (index) {
                         return InkWell(
                           onTap: () {

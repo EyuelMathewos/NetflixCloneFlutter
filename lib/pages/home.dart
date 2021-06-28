@@ -207,6 +207,7 @@ class homePageState extends State<Home> {
                   ),
                 ), //scroll view
                 scrollView("Action", movie2),
+                scrollView("Action & Adventure", movie3),
               ],
             ), //Col
           ),

@@ -12,8 +12,7 @@ class Watch extends StatefulWidget {
 class watchState extends State<Watch> {
   VideoPlayerController _controller;
   Future<void> _initializeVideoPlayerFuture;
-  var linkVideo;
-  Watch(this.linkVideo);
+
   @override
   void initState() {
     // Create an store the VideoPlayerController. The VideoPlayerController
@@ -42,7 +41,7 @@ class watchState extends State<Watch> {
   }
 
   Widget getBody() {
-    print ($this.linkVideo);
+
     //var size = MediaQuery.of(context).size;
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),

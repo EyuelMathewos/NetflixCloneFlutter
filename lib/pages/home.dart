@@ -13,7 +13,7 @@ class homePageState extends State<Home> {
   List data;
   @override
   void initState() {
-    data = jsonDecode(movie);
+    data = movie;
     super.initState();
   }
 

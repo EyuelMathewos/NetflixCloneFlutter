@@ -157,6 +157,7 @@ class homePageState extends State<Home> {
                 SizedBox(
                   height: 40,
                 ),
+                scrollView("Recent", movie),
                 scrollView("Action", movie2),
                 scrollView("Action & Adventure", movie3),
               ],

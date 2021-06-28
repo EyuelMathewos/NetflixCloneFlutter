@@ -13,6 +13,24 @@ class homePageState extends State<Home> {
     return Scaffold(resizeToAvoidBottomInset: false, backgroundColor: Colors.black, body: getBody());
   }
 
+  Widget scrollView() {
+    Container(
+      Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 15, right: 15),
+            child: Text("My List",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                )),
+          ),
+        ],
+      ), //col
+    );
+  }
+
   Widget getBody() {
     var size = MediaQuery.of(context).size;
     return Padding(

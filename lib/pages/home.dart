@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:netflixclone/pages/watch.dart';
 import 'package:netflixclone/JSON/movie.dart';
 import 'dart:convert';
+import 'dart:async';
 
 class Home extends StatefulWidget {
   @override

@@ -187,12 +187,12 @@ class searchState extends State<Search> {
                                       top: 8,
                                     ),
                                     child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
-                                      Text("Indexed Movie Title",
+                                      Text(movie[index]["title"],
                                           style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 15,
                                           )),
-                                      Text("About movie Detial",
+                                      Text(movie[index]["about"],
                                           style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 12,

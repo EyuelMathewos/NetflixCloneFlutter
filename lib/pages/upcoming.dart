@@ -124,7 +124,7 @@ class upcomingState extends State<Upcoming> {
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
                                       Image.asset(
-                                        movie[index]["title"],
+                                        movie[index]["titleimage"],
                                         width: 150,
                                         fit: BoxFit.cover,
                                       ),

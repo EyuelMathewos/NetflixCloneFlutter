@@ -5,8 +5,6 @@ import 'package:netflixclone/pages/root.dart';
 import 'package:video_player/video_player.dart';
 
 class Watch extends StatefulWidget {
-  var linkVideo;
-  Watch(this.linkVideo);
   @override
   watchState createState() => watchState();
 }
@@ -14,7 +12,8 @@ class Watch extends StatefulWidget {
 class watchState extends State<Watch> {
   VideoPlayerController _controller;
   Future<void> _initializeVideoPlayerFuture;
-
+  var linkVideo;
+  Watch(this.linkVideo);
   @override
   void initState() {
     // Create an store the VideoPlayerController. The VideoPlayerController

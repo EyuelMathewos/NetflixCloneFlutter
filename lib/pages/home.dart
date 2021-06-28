@@ -144,7 +144,7 @@ class homePageState extends State<Home> {
                             height: 150,
 
                             decoration: BoxDecoration(
-                              image: DecorationImage(image: AssetImage("assets/images/img_6.png"), fit: BoxFit.cover),
+                              image: DecorationImage(image: AssetImage(movie[index].cover), fit: BoxFit.cover),
                               borderRadius: BorderRadius.circular(6),
                             ), //boxed decoration
                           ),

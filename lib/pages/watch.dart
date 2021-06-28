@@ -10,6 +10,8 @@ class Watch extends StatefulWidget {
 }
 
 class watchState extends State<Watch> {
+  var videoid;
+  watchState(this.videoid);
   VideoPlayerController _controller;
   Future<void> _initializeVideoPlayerFuture;
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:netflixclone/pages/watch.dart';
-//import 'package:netflixclone/JSON/movie.dart';
+import 'package:netflixclone/JSON/movie.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -128,7 +128,7 @@ class homePageState extends State<Home> {
                       left: 8,
                     ),
                     child: Row(
-                        children: List.generate(6, (index) {
+                        children: List.generate(movie.length, (index) {
                       return InkWell(
                         onTap: () {
                           Navigator.push(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:netflixclone/JSON/menu.dart';
 import 'package:netflixclone/pages/root.dart';
+import 'package:netflixclone/JSON/movie.dart';
 
 class Upcoming extends StatefulWidget {
   @override
@@ -97,7 +98,7 @@ class upcomingState extends State<Upcoming> {
                         bottom: 18,
                       ),
                       child: Column(
-                          children: List.generate(12, (index) {
+                          children: List.generate(movie.length, (index) {
                         return InkWell(
                           onTap: () {
                             print("container clicked $index");
@@ -112,7 +113,7 @@ class upcomingState extends State<Upcoming> {
                               child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
                                 Container(
                                   height: 200,
-                                  decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/search_1.jpg"), fit: BoxFit.cover)),
+                                  decoration: BoxDecoration(image: DecorationImage(image: AssetImage(movie[index]["cover"]), fit: BoxFit.cover)),
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(

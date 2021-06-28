@@ -198,11 +198,13 @@ class searchState extends State<Search> {
                                           left: 8,
                                           right: 8,
                                         ),
-                                        child: Text(movie[index]["about"],
-                                            style: TextStyle(
-                                              color: Colors.white,
-                                              fontSize: 12,
-                                            )),
+                                        child: Container(
+                                          child: Text(movie[index]["about"],
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 12,
+                                              )),
+                                        ),
                                       ),
                                       Text("2016 | +11 | 2016 | Action",
                                           style: TextStyle(

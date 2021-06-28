@@ -141,7 +141,7 @@ class homePageState extends State<Home> {
                           padding: const EdgeInsets.only(right: 8),
                           child: Container(
                             width: 80,
-                            height: 150,
+                            height: 300,
 
                             decoration: BoxDecoration(
                               image: DecorationImage(image: AssetImage(movie[index]["cover"]), fit: BoxFit.cover),

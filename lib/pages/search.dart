@@ -3,6 +3,7 @@ import 'package:flutter_icons/flutter_icons.dart';
 import 'package:netflixclone/JSON/menu.dart';
 import 'package:netflixclone/pages/root.dart';
 import 'package:video_player/video_player.dart';
+import 'package:netflixclone/JSON/movie.dart';
 
 class Search extends StatefulWidget {
   @override
@@ -159,7 +160,7 @@ class searchState extends State<Search> {
                         bottom: 18,
                       ),
                       child: Column(
-                          children: List.generate(12, (index) {
+                          children: List.generate(movie.length, (index) {
                         return InkWell(
                           onTap: () {
                             print("container clicked $index");
@@ -174,7 +175,7 @@ class searchState extends State<Search> {
                               child: Row(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
                                 Column(children: [
                                   Image.asset(
-                                    "assets/images/search_1.jpg",
+                                    movie[index]["cover"],
                                     width: 150,
                                     height: 80,
                                   )

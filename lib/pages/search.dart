@@ -199,11 +199,11 @@ class searchState extends State<Search> {
                                           right: 8,
                                         ),
                                         child: Container(
-                                          width: 290,
+                                          width: 280,
                                           child: Text(movie[index]["about"],
                                               style: TextStyle(
                                                 color: Colors.white,
-                                                fontSize: 12,
+                                                fontSize: 8,
                                               )),
                                         ),
                                       ),

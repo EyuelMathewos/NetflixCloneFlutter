@@ -160,7 +160,6 @@ class searchState extends State<Search> {
                         bottom: 18,
                       ),
                       child: Column(
-                        
                           children: List.generate(movie.length, (index) {
                         return InkWell(
                           onTap: () {
@@ -181,7 +180,7 @@ class searchState extends State<Search> {
                                     height: 80,
                                   )
                                 ]),
-                                Column(children: [
+                                Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
                                   Padding(
                                     padding: const EdgeInsets.only(
                                       left: 15,

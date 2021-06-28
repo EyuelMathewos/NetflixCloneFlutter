@@ -13,7 +13,7 @@ class homePageState extends State<Home> {
     return Scaffold(resizeToAvoidBottomInset: false, backgroundColor: Colors.black, body: getBody());
   }
 
-  Widget scrollView() {
+  Widget scrollView(var name) {
     return Container(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -206,7 +206,7 @@ class homePageState extends State<Home> {
                         ), //row
                   ),
                 ), //scroll view
-                scrollView(),
+                scrollView("hello"),
               ],
             ), //Col
           ),

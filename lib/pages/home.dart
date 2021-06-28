@@ -24,7 +24,7 @@ class homePageState extends State<Home> {
             child: Text(name,
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 15,
+                  fontSize: 20,
                   //fontWeight: FontWeight.bold,
                 )),
           ),

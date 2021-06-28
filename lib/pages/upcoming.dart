@@ -163,7 +163,7 @@ class upcomingState extends State<Upcoming> {
                                     right: 8,
                                   ),
                                   child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
-                                    Text("Movie Title",
+                                    Text(movie[index][title],
                                         style: TextStyle(
                                           fontSize: 24,
                                           color: Colors.white,

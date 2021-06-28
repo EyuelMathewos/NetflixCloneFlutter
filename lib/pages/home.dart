@@ -13,7 +13,7 @@ class homePageState extends State<Home> {
     return Scaffold(resizeToAvoidBottomInset: false, backgroundColor: Colors.black, body: getBody());
   }
 
-  Widget scrollView(var name) {
+  Widget scrollView(var name, List movieList) {
     return Container(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -34,7 +34,7 @@ class homePageState extends State<Home> {
                 left: 8,
               ),
               child: Row(
-                  children: List.generate(movie.length, (index) {
+                  children: List.generate(movieList.length, (index) {
                 return InkWell(
                   onTap: () {
                     Navigator.push(
@@ -206,7 +206,7 @@ class homePageState extends State<Home> {
                         ), //row
                   ),
                 ), //scroll view
-                scrollView("hello"),
+                scrollView("hello", movie),
               ],
             ), //Col
           ),

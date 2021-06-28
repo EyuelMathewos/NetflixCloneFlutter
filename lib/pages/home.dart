@@ -13,7 +13,7 @@ class homePageState extends State<Home> {
   List data;
   @override
   void initState() {
-    data = jsonDecode([
+    data = jsonDecode("[
       {
         'cover': 'assets/images/oldguardcover.jpg',
         'featureimage': 'assets/images/OldGuardfeature.jpg',
@@ -25,7 +25,7 @@ class homePageState extends State<Home> {
         'about': "Four undying warriors who've secretly protected humanity for centuries become targeted for their mysterious powers just as they discover a new immortal.",
         'url': "5ed36e35c80cb808ee742a2b"
       }
-    ]);
+    ]");
     super.initState();
   }
 

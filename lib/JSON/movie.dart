@@ -36,7 +36,7 @@ List movie = [
     'cover': 'assets/images/venomcover.jpg',
     'featureimage': 'assets/images/venomfeature.jpg',
     'title': "Venom",
-    'titleimage': "assets/images/title.png",
+    'titleimage': "assets/images/venomtitle.png",
     'year': "2016",
     'hours': "2h5m",
     'movietype': "Action",

@@ -20,5 +20,27 @@ List movie = [
     'movietype': "Action",
     'about': "Four undying warriors who've secretly protected humanity for centuries become targeted for their mysterious powers just as they discover a new immortal.",
     'url': "5ed36e35c80cb808ee742a2b"
+  },
+  {
+    'cover': 'assets/images/spider-mancover.jpg',
+    'featureimage': 'assets/images/spider-manfeature.jpg',
+    'title': "Spider-Man: Far from Home",
+    'titleimage': 'assets/images/spidermantitle.png',
+    'year': "2016",
+    'hours': "2h5m",
+    'movietype': "Action",
+    'about': "Four undying warriors who've secretly protected humanity for centuries become targeted for their mysterious powers just as they discover a new immortal.",
+    'url': "5ed36e35c80cb808ee742a2b"
+  },
+  {
+    'cover': 'assets/images/venomcover.jpg',
+    'featureimage': 'assets/images/venomfeature.jpg',
+    'title': "Assassins Creed",
+    'titleimage': "Venom",
+    'year': "2016",
+    'hours': "2h5m",
+    'movietype': "Action",
+    'about': "Four undying warriors who've secretly protected humanity for centuries become targeted for their mysterious powers just as they discover a new immortal.",
+    'url': "5ed36e35c80cb808ee742a2b"
   }
 ];

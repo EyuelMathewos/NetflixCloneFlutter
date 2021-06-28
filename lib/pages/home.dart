@@ -15,7 +15,7 @@ class homePageState extends State<Home> {
 
   Widget scrollView() {
     return Container(
-      child:Column(
+      child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Padding(
@@ -172,6 +172,7 @@ class homePageState extends State<Home> {
                         ), //row
                   ),
                 ), //scroll view
+                scrollView(),
               ],
             ), //Col
           ),

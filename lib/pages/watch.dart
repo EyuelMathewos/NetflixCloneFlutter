@@ -5,8 +5,6 @@ import 'package:netflixclone/pages/root.dart';
 import 'package:video_player/video_player.dart';
 
 class Watch extends StatefulWidget {
-  var urllink;
-  Watch(urllink);
   @override
   watchState createState() => watchState();
 }
@@ -14,7 +12,6 @@ class Watch extends StatefulWidget {
 class watchState extends State<Watch> {
   VideoPlayerController _controller;
   Future<void> _initializeVideoPlayerFuture;
-  var urllinkstate;
 
   @override
   void initState() {
@@ -24,7 +21,7 @@ class watchState extends State<Watch> {
     _controller = VideoPlayerController.network(
       'https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4',
     );
-    urllinkstate = urllink;
+
     _initializeVideoPlayerFuture = _controller.initialize().then((_) => setState(() {}));
 
     super.initState();
@@ -44,7 +41,6 @@ class watchState extends State<Watch> {
   }
 
   Widget getBody() {
-    print(widget.urllink);
     //var size = MediaQuery.of(context).size;
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),

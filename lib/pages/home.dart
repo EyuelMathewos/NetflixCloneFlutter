@@ -21,7 +21,7 @@ class homePageState extends State<Home> {
         children: [
           Padding(
             padding: const EdgeInsets.only(left: 15, right: 15),
-            child: Text($name,
+            child: Text(name,
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,

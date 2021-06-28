@@ -10,13 +10,6 @@ class Home extends StatefulWidget {
 }
 
 class homePageState extends State<Home> {
-  List data;
-  @override
-  void initState() {
-    data = movie;
-    super.initState();
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(resizeToAvoidBottomInset: false, backgroundColor: Colors.black, body: getBody());

@@ -5,6 +5,8 @@ import 'package:netflixclone/pages/root.dart';
 import 'package:video_player/video_player.dart';
 
 class Watch extends StatefulWidget {
+  var urllink;
+  Watch(urllink);
   @override
   watchState createState() => watchState();
 }
@@ -41,7 +43,7 @@ class watchState extends State<Watch> {
   }
 
   Widget getBody() {
-
+    print(widget.urllink);
     //var size = MediaQuery.of(context).size;
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),

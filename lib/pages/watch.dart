@@ -5,6 +5,8 @@ import 'package:netflixclone/pages/root.dart';
 import 'package:video_player/video_player.dart';
 
 class Watch extends StatefulWidget {
+  var linkVideo;
+  Watch(this.linkVideo);
   @override
   watchState createState() => watchState();
 }

@@ -17,6 +17,7 @@ class homePageState extends State<Home> {
     return Container(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
             padding: const EdgeInsets.only(left: 15, right: 15),

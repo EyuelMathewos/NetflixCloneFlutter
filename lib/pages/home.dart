@@ -8,14 +8,12 @@ class Home extends StatefulWidget {
 }
 
 class homePageState extends State<Home> {
-  List data = JSON.decode(movie);
   @override
   Widget build(BuildContext context) {
     return Scaffold(resizeToAvoidBottomInset: false, backgroundColor: Colors.black, body: getBody());
   }
 
   Widget getBody() {
-    print(data[1]["title"]);
     var size = MediaQuery.of(context).size;
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),

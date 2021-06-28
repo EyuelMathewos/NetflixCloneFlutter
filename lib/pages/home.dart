@@ -157,55 +157,6 @@ class homePageState extends State<Home> {
                 SizedBox(
                   height: 40,
                 ),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 15, right: 15),
-                      child: Text("Recent",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          )),
-                    ),
-                  ],
-                ), //col
-                SizedBox(
-                  height: 20,
-                ),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Padding(
-                    padding: const EdgeInsets.only(
-                      left: 8,
-                    ),
-                    child: Row(
-                        children: List.generate(movie.length, (index) {
-                      return InkWell(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => Watch()),
-                          );
-                          print("container clicked $index");
-                        },
-                        child: new Padding(
-                          padding: const EdgeInsets.only(right: 8),
-                          child: Container(
-                            width: 150,
-                            height: 80,
-
-                            decoration: BoxDecoration(
-                              image: DecorationImage(image: AssetImage(movie[index]["cover"]), fit: BoxFit.cover),
-                              borderRadius: BorderRadius.circular(6),
-                            ), //boxed decoration
-                          ),
-                        ),
-                      );
-                    }) //list
-                        ), //row
-                  ),
-                ), //scroll view
                 scrollView("Action", movie2),
                 scrollView("Action & Adventure", movie3),
               ],

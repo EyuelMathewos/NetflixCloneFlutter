@@ -50,7 +50,7 @@ class homePageState extends State<Home> {
                       height: 80,
 
                       decoration: BoxDecoration(
-                        image: DecorationImage(image: AssetImage(movie[index]["cover"]), fit: BoxFit.cover),
+                        image: DecorationImage(image: AssetImage(movieList[index]["cover"]), fit: BoxFit.cover),
                         borderRadius: BorderRadius.circular(6),
                       ), //boxed decoration
                     ),
@@ -206,7 +206,7 @@ class homePageState extends State<Home> {
                         ), //row
                   ),
                 ), //scroll view
-                scrollView("hello", movie),
+                scrollView("Action", movie2),
               ],
             ), //Col
           ),

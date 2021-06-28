@@ -14,7 +14,8 @@ class homePageState extends State<Home> {
   }
 
   Widget getBody() {
-    print(movie[1]["title"]);
+    data = JSON.decode(movie);
+    print(data[1]["title"]);
     var size = MediaQuery.of(context).size;
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),

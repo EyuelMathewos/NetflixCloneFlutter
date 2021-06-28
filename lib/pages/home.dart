@@ -20,7 +20,7 @@ class homePageState extends State<Home> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: const EdgeInsets.only(top: 15, left: 15, right: 15),
+            padding: const EdgeInsets.only(top: 15, left: 15, right: 15, bottom: 4),
             child: Text(name,
                 style: TextStyle(
                   color: Colors.white,

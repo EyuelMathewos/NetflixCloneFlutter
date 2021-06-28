@@ -13,7 +13,7 @@ class homePageState extends State<Home> {
   List data;
   @override
   void initState() {
-    data = jsonDecode("  {
+    data = JSON.decode("  {
     'cover': 'assets/images/oldguardcover.jpg',
     'featureimage': 'assets/images/OldGuardfeature.jpg',
     'title': "The Old Guard",

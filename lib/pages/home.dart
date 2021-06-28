@@ -24,7 +24,7 @@ class homePageState extends State<Home> {
             child: Text(name,
                 style: TextStyle(
                   color: Colors.white,
-                  fontWeight: FontWeight.bold,
+                  //fontWeight: FontWeight.bold,
                 )),
           ),
           SingleChildScrollView(

@@ -43,7 +43,7 @@ class watchState extends State<Watch> {
   }
 
   Widget getBody() {
-    print("**************$this.linkVideo");
+    print("************** $this.linkVideo");
     //var size = MediaQuery.of(context).size;
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),

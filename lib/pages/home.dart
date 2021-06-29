@@ -146,7 +146,7 @@ class homePageState extends State<Home> {
                     children: [
                       Icon(Icons.info_outline, color: Colors.white, size: 25),
                       SizedBox(
-                        height: 5,
+                        width: 5,
                       ),
                       Text("info",
                           style: TextStyle(

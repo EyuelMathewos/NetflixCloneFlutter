@@ -14,7 +14,7 @@ List items = [
     "text": "Search"
   },
   {
-    "icon": AntDesign.download,
-    "text": "Downloads"
+    "icon": AntDesign.windowsoutiled,
+    "text": "List"
   }
 ];

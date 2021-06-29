@@ -120,7 +120,6 @@ class watchState extends State<Watch> {
                                     fontWeight: FontWeight.bold,
                                   )),
                               //2016 | +11 | 2016 | Action
-                              //"${movie[index]['year']} | +11 | ${movie[index]['year']} | ${movie[index]['movietype']}"
                               Row(
                                 children: [
                                   Text("New ",
@@ -129,7 +128,7 @@ class watchState extends State<Watch> {
                                         fontSize: 15,
                                         fontWeight: FontWeight.bold,
                                       )),
-                                  Text("${movie[index]['year']} ",
+                                  Text("2020 ",
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 15,
@@ -141,7 +140,7 @@ class watchState extends State<Watch> {
                                         fontSize: 15,
                                         fontWeight: FontWeight.bold,
                                       )),
-                                  Text("${movie[index]['movietype']} ",
+                                  Text("Movie ",
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 15,

@@ -187,7 +187,7 @@ class watchState extends State<Watch> {
                                     height: 80,
                                   )
                                 ]),
-                                Column(children: [
+                                Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
                                   Padding(
                                     padding: const EdgeInsets.only(
                                       left: 15,

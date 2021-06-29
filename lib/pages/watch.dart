@@ -199,11 +199,14 @@ class watchState extends State<Watch> {
                                             color: Colors.white,
                                             fontSize: 15,
                                           )),
-                                      Text(movie[index]["about"],
-                                          style: TextStyle(
-                                            fontSize: 12,
-                                            color: Colors.white,
-                                          )),
+                                      Container(
+                                        width: 150,
+                                        child: Text(movie[index]["about"],
+                                            style: TextStyle(
+                                              fontSize: 12,
+                                              color: Colors.white,
+                                            )),
+                                      ),
                                       Text("2016 | +11 | 2016 | Action",
                                           style: TextStyle(
                                             color: Colors.white,

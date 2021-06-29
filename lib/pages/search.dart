@@ -194,7 +194,7 @@ class searchState extends State<Search> {
                                           )),
                                       Padding(
                                         padding: EdgeInsets.only(
-                                          top: 15,
+                                          top: 8,
                                           //left: 8,
                                           //right: 8,
                                         ),

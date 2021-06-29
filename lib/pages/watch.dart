@@ -113,7 +113,7 @@ class watchState extends State<Watch> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Movie Title",
+                              Text(widget.urllink[0]["title"],
                                   style: TextStyle(
                                     fontSize: 28,
                                     color: Colors.white,
@@ -147,12 +147,6 @@ class watchState extends State<Watch> {
                                         fontWeight: FontWeight.bold,
                                       )),
                                   Text("HD ",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 15,
-                                        fontWeight: FontWeight.bold,
-                                      )),
-                                  Text('${widget.urllink[0]["url"]}',
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 15,

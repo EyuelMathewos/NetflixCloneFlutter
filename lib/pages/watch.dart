@@ -200,10 +200,10 @@ class watchState extends State<Watch> {
                                             fontSize: 15,
                                           )),
                                       Container(
-                                        width: 150,
+                                        width: 200,
                                         child: Text(movie[index]["about"],
                                             style: TextStyle(
-                                              fontSize: 12,
+                                              fontSize: 8,
                                               color: Colors.white,
                                             )),
                                       ),

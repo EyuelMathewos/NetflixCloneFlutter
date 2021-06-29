@@ -21,7 +21,7 @@ class watchState extends State<Watch> {
     // offers several different constructors to play videos from assets, files,
     // or the internet.
     _controller = VideoPlayerController.network(
-      'https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4',
+      'https://movieapiet.herokuapp.com/api/container/Movie/files/5ed36e35c80cb808ee742a2b',
     );
 
     _initializeVideoPlayerFuture = _controller.initialize().then((_) => setState(() {}));

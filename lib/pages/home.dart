@@ -39,7 +39,7 @@ class homePageState extends State<Home> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Watch(urllink:"hello")),
+                      MaterialPageRoute(builder: (context) => Watch(urllink: "hello")),
                     );
                     print("container clicked $index");
                   },

@@ -152,6 +152,12 @@ class watchState extends State<Watch> {
                                         fontSize: 15,
                                         fontWeight: FontWeight.bold,
                                       )),
+                                                                        Text(${widget.urllink},
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold,
+                                      )),
                                 ],
                               ),
                             ],

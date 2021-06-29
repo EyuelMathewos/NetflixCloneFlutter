@@ -206,11 +206,13 @@ class watchState extends State<Watch> {
                                           right: 8,
                                         ),
                                         child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
-                                          Text(movie[index]["about"],
-                                              style: TextStyle(
-                                                fontSize: 12,
-                                                color: Colors.white,
-                                              )),
+                                          Container(
+                                            Text(movie[index]["about"],
+                                                style: TextStyle(
+                                                  fontSize: 12,
+                                                  color: Colors.white,
+                                                )),
+                                          ),
                                         ]),
                                       ),
                                       Text("2016 | +11 | 2016 | Action",

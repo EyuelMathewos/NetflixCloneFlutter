@@ -207,7 +207,7 @@ class watchState extends State<Watch> {
                                               color: Colors.white,
                                             )),
                                       ),
-                                      Text("2016 | +11 | 2016 | Action",
+                                      Text("${movie[index]['year']} | +11 | 2016 | Action",
                                           style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 12,

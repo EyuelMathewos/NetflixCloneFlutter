@@ -142,7 +142,7 @@ class homePageState extends State<Home> {
                       )
                     ],
                   ),
-                  Column(
+                  Row(
                     children: [
                       Icon(Icons.info_outline, color: Colors.white, size: 25),
                       SizedBox(

@@ -193,14 +193,14 @@ class searchState extends State<Search> {
                                             fontSize: 15,
                                           )),
                                       Padding(
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
                                         padding: EdgeInsets.only(
                                           top: 15,
                                           left: 8,
                                           right: 8,
                                         ),
                                         child: Container(
-                                          mainAxisAlignment: MainAxisAlignment.start,
-                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           width: 150,
                                           child: Text(movie[index]["about"],
                                               style: TextStyle(

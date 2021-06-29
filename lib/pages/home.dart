@@ -109,7 +109,7 @@ class homePageState extends State<Home> {
                   height: 10,
                 ),
                 Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                  Column(
+                  Row(
                     children: [
                       Icon(Icons.add, color: Colors.white, size: 25),
                       SizedBox(

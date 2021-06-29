@@ -199,11 +199,20 @@ class watchState extends State<Watch> {
                                             color: Colors.white,
                                             fontSize: 15,
                                           )),
-                                      Text(movie[index]["about"],
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 12,
-                                          )),
+                                      Padding(
+                                        padding: EdgeInsets.only(
+                                          top: 20,
+                                          left: 8,
+                                          right: 8,
+                                        ),
+                                        child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
+                                          Text(movie[index]["about"],
+                                              style: TextStyle(
+                                                fontSize: 12,
+                                                color: Colors.white,
+                                              )),
+                                        ]),
+                                      ),
                                       Text("2016 | +11 | 2016 | Action",
                                           style: TextStyle(
                                             color: Colors.white,

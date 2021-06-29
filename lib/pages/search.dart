@@ -87,7 +87,7 @@ class searchState extends State<Search> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Upcoming Movies",
+                              Text("Search",
                                   style: TextStyle(
                                     fontSize: 26,
                                     color: Colors.white,

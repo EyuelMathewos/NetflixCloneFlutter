@@ -22,7 +22,7 @@ class watchState extends State<Watch> {
     // offers several different constructors to play videos from assets, files,
     // or the internet.
     _controller = VideoPlayerController.network(
-      'https://movieapiet.herokuapp.com/read/',
+      'https://movieapiet.herokuapp.com/read/${widget.urllink[0]["url"]}',
     );
 
     _initializeVideoPlayerFuture = _controller.initialize().then((_) => setState(() {}));

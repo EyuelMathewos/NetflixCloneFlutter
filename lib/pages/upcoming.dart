@@ -2,22 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:netflixclone/JSON/menu.dart';
 import 'package:netflixclone/pages/root.dart';
-import 'package:video_player/video_player.dart';
 import 'package:netflixclone/JSON/movie.dart';
 
-class Search extends StatefulWidget {
+class Upcoming extends StatefulWidget {
   @override
-  searchState createState() => searchState();
+  upcomingState createState() => upcomingState();
 }
 
-class searchState extends State<Search> {
-  TextEditingController _controller;
-  @override
-  void initState() {
-    super.initState();
-    _controller = TextEditingController();
-  }
-
+class upcomingState extends State<Upcoming> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(backgroundColor: Colors.black, resizeToAvoidBottomInset: false, body: getBody());
@@ -72,65 +64,33 @@ class searchState extends State<Search> {
                       ],
                     ), //row
                   ), //padding
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Padding(
-                    padding: EdgeInsets.only(
-                      left: 15,
-                      right: 15,
-                      bottom: 15,
-                    ),
-                    child: TextField(
-                      controller: _controller,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 15,
-                        height: 2.0,
-                      ),
-                      decoration: InputDecoration(
-                          fillColor: Colors.black26,
-                          filled: true,
-                          hintText: 'Search',
-                          hintStyle: TextStyle(
-                            color: Colors.white,
-                            fontSize: 15,
-                          ),
-                          prefixIcon: const Icon(
-                            Icons.search,
-                            color: Colors.white,
-                          ),
-                          enabledBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Colors.white),
-                          ),
-                          focusedBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Colors.red),
-                          )),
-                      onChanged: (text) {
-                        print('First text field: $text');
-                      },
-                      onSubmitted: (String value) async {
-                        await showDialog<void>(
-                          context: context,
-                          builder: (BuildContext context) {
-                            return AlertDialog(
-                              title: const Text('Thanks!'),
-                              content: Text('You typed "$value", which has length ${value.characters.length}.'),
-                              actions: <Widget>[
-                                TextButton(
-                                  onPressed: () {
-                                    Navigator.pop(context);
-                                  },
-                                  child: const Text('OK'),
-                                ),
-                              ],
-                            );
-                          },
-                        );
-                      },
-                    ),
-                  ),
 
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        height: 80,
+                        child: Padding(
+                          padding: const EdgeInsets.only(
+                            top: 18,
+                            left: 4,
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Upcoming Movies",
+                                  style: TextStyle(
+                                    fontSize: 26,
+                                    color: Colors.white,
+                                  )),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ), //Row
                   SingleChildScrollView(
                     scrollDirection: Axis.vertical,
                     child: Padding(
@@ -147,52 +107,84 @@ class searchState extends State<Search> {
                             decoration: BoxDecoration(color: Colors.black38),
                             child: Padding(
                               padding: const EdgeInsets.only(
-                                top: 0,
-                                bottom: 15,
+                                top: 4,
+                                bottom: 20,
                               ),
-                              child: Row(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
-                                Column(children: [
-                                  Image.asset(
-                                    movie[index]["cover"],
-                                    width: 150,
-                                    height: 80,
-                                  )
-                                ]),
-                                Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
-                                  Padding(
-                                    padding: const EdgeInsets.only(
-                                      left: 15,
-                                      top: 0,
-                                    ),
-                                    child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
-                                      Text(movie[index]["title"],
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 15,
-                                          )),
-                                      Padding(
-                                        padding: EdgeInsets.only(
-                                          top: 4,
-                                          //left: 8,
-                                          //right: 8,
-                                        ),
-                                        child: Container(
-                                          width: 190,
-                                          child: Text(movie[index]["about"],
-                                              style: TextStyle(
-                                                color: Colors.white,
-                                                fontSize: 8,
-                                              )),
-                                        ),
+                              child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
+                                Container(
+                                  height: 200,
+                                  decoration: BoxDecoration(image: DecorationImage(image: AssetImage(movie[index]["cover"]), fit: BoxFit.cover)),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(
+                                    left: 10,
+                                    top: 10,
+                                  ),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Image.asset(
+                                        movie[index]["titleimage"],
+                                        width: 150,
+                                        fit: BoxFit.cover,
                                       ),
-                                      Text("2016 | +11 | 2016 | Action",
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 12,
-                                          )),
-                                    ]),
-                                  )
-                                ]),
+                                      Row(
+                                        children: [
+                                          IconButton(
+                                            icon: Icon(
+                                              Icons.notifications,
+                                              color: Colors.white,
+                                              size: 25,
+                                            ),
+                                            onPressed: () {
+                                              Navigator.push(
+                                                context,
+                                                MaterialPageRoute(builder: (context) => RootApp()),
+                                              );
+                                              print("home clicked");
+                                            },
+                                          ), //Icon button
+                                          IconButton(
+                                              icon: Icon(
+                                                Icons.info_outline,
+                                                color: Colors.white,
+                                                size: 25,
+                                              ),
+                                              onPressed: null), //Icon button
+                                        ],
+                                      ), // inner row
+                                    ],
+                                  ), //row
+                                ), //padding
+                                Padding(
+                                  padding: EdgeInsets.only(
+                                    top: 20,
+                                    left: 8,
+                                    right: 8,
+                                  ),
+                                  child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
+                                    Text(movie[index]["title"],
+                                        style: TextStyle(
+                                          fontSize: 24,
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        )),
+                                  ]),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.only(
+                                    top: 20,
+                                    left: 8,
+                                    right: 8,
+                                  ),
+                                  child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
+                                    Text(movie[index]["about"],
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          color: Colors.white,
+                                        )),
+                                  ]),
+                                ),
                               ]),
                             ),
                             //height: 100,

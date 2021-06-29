@@ -185,7 +185,7 @@ class searchState extends State<Search> {
                                   Padding(
                                     padding: const EdgeInsets.only(
                                       left: 15,
-                                      top: 8,
+                                      top: 0,
                                     ),
                                     child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
                                       Text(movie[index]["title"],

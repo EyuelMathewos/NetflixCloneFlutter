@@ -81,7 +81,7 @@ class searchState extends State<Search> {
                         child: Padding(
                           padding: const EdgeInsets.only(
                             top: 18,
-                            left: 8,
+                            left: 15,
                           ),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.start,

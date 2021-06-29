@@ -166,7 +166,7 @@ class watchState extends State<Watch> {
                         bottom: 18,
                       ),
                       child: Column(
-                          children: List.generate(6, (index) {
+                          children: List.generate(menu.length, (index) {
                         return InkWell(
                           onTap: () {
                             print("container clicked $index");
@@ -181,7 +181,7 @@ class watchState extends State<Watch> {
                               child: Row(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
                                 Column(children: [
                                   Image.asset(
-                                    "assets/images/search_1.jpg",
+                                    menu[index]["cover"],
                                     width: 150,
                                     height: 80,
                                   )

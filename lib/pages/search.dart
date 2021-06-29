@@ -72,7 +72,9 @@ class searchState extends State<Search> {
                       ],
                     ), //row
                   ), //padding
-
+                  SizedBox(
+                    height: 10,
+                  ),
                   Padding(
                     padding: EdgeInsets.only(
                       left: 15,

@@ -5,6 +5,8 @@ import 'package:netflixclone/pages/root.dart';
 import 'package:video_player/video_player.dart';
 
 class Watch extends StatefulWidget {
+    var urllink;
+    Watch({Key key,this.urllink}) : super(key: key);
   @override
   watchState createState() => watchState();
 }
@@ -144,6 +146,12 @@ class watchState extends State<Watch> {
                                         fontWeight: FontWeight.bold,
                                       )),
                                   Text("HD ",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold,
+                                      )),
+                                                                      Text(${widget.urllink},
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 15,

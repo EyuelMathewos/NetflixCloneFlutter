@@ -199,8 +199,6 @@ class searchState extends State<Search> {
                                           right: 8,
                                         ),
                                         child: Container(
-                                          mainAxisAlignment: MainAxisAlignment.start,
-                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           width: 150,
                                           child: Text(movie[index]["about"],
                                               style: TextStyle(

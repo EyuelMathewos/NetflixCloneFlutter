@@ -170,7 +170,7 @@ class searchState extends State<Search> {
                             decoration: BoxDecoration(color: Colors.black38),
                             child: Padding(
                               padding: const EdgeInsets.only(
-                                top: 0,
+                                top: 20,
                                 bottom: 20,
                               ),
                               child: Row(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [

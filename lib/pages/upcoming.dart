@@ -108,7 +108,7 @@ class upcomingState extends State<Upcoming> {
                             child: Padding(
                               padding: const EdgeInsets.only(
                                 top: 4,
-                                bottom: 80,
+                                bottom: 150,
                               ),
                               child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
                                 Container(

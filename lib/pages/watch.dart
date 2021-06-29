@@ -6,7 +6,7 @@ import 'package:video_player/video_player.dart';
 import 'package:netflixclone/JSON/movie.dart';
 
 class Watch extends StatefulWidget {
-  var urllink;
+  List urllink;
   Watch({Key key, this.urllink}) : super(key: key);
   @override
   watchState createState() => watchState();

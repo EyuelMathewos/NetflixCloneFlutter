@@ -14,7 +14,7 @@ List items = [
     "text": "Search"
   },
   {
-    "icon": AntDesign.reorderoutlined,
+    "icon": AntDesign.reorder,
     "text": "List"
   }
 ];

@@ -3,6 +3,7 @@ import 'package:flutter_icons/flutter_icons.dart';
 import 'package:netflixclone/JSON/menu.dart';
 import 'package:netflixclone/pages/root.dart';
 import 'package:video_player/video_player.dart';
+import 'package:netflixclone/JSON/movie.dart';
 
 class Watch extends StatefulWidget {
   var urllink;

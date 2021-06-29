@@ -171,7 +171,7 @@ class searchState extends State<Search> {
                             child: Padding(
                               padding: const EdgeInsets.only(
                                 top: 0,
-                                bottom: 4,
+                                bottom: 14,
                               ),
                               child: Row(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
                                 Column(children: [

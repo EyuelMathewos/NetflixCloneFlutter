@@ -16,5 +16,19 @@ class loginState extends State<Login> {
     return Scaffold(backgroundColor: Colors.black, resizeToAvoidBottomInset: false, body: getBody());
   }
 
-  Widget getBody() {}
+  Widget getBody() {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 10),
+      child: Stack(children: [
+        Container(
+          width: 150,
+          height: 80,
+          decoration: BoxDecoration(
+            image: DecorationImage(image: AssetImage(movieList[index]["cover"]), fit: BoxFit.cover),
+            borderRadius: BorderRadius.circular(6),
+          ),
+        ),
+      ]),
+    );
+  }
 }

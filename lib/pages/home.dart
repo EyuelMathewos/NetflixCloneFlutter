@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:netflixclone/pages/watch.dart';
 import 'package:netflixclone/JSON/movie.dart';
+import 'package:netflixclone/pages/login.dart';
 
 class Home extends StatefulWidget {
   @override

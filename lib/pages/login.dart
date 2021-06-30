@@ -30,12 +30,14 @@ class loginState extends State<Login> {
         ),
         Center(
           child: Container(
-            height: 200,
+            height: 300,
             width: size.width - 20,
             decoration: BoxDecoration(color: Colors.black.withOpacity(0.85)),
             child: Padding(
               padding: EdgeInsets.all(10),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text("Login",
                       style: TextStyle(

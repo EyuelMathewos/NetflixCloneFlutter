@@ -17,12 +17,12 @@ class loginState extends State<Login> {
   }
 
   Widget getBody() {
+    var size = MediaQuery.of(context).size;
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),
       child: Stack(children: [
         Container(
-          width: 150,
-          height: 80,
+          height: size.height,
           decoration: BoxDecoration(
             image: DecorationImage(image: AssetImage("assets/images/banner.webp"), fit: BoxFit.cover),
             borderRadius: BorderRadius.circular(6),

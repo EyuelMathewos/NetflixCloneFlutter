@@ -96,7 +96,7 @@ class loginState extends State<Login> {
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                               // background color
-                              primary: Colors.orange,
+                              primary: Colors.red,
 
                               textStyle: TextStyle(fontSize: 15),
                             ),

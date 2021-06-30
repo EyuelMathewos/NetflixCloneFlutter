@@ -71,7 +71,7 @@ class loginState extends State<Login> {
                                 fillColor: Colors.black26,
                                 filled: true,
                                 hintText: 'password',
-                                labelText: 'Password',
+                                obscureText: true,
                                 hintStyle: TextStyle(
                                   color: Colors.white,
                                   fontSize: 15,

@@ -86,12 +86,16 @@ class loginState extends State<Login> {
                                   borderSide: BorderSide(color: Colors.orange),
                                 ))),
                         ElevatedButton(
-                          width: 400,
+                          style: ElevatedButton.styleFrom(
+                            // background color
+                            primary: Colors.orange,
+                            padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                            textStyle: TextStyle(fontSize: 20),
+                          ),
+                          child: Text('I am a button'),
                           onPressed: () {
-                            // Validate will return true if the form is valid, or false if
-                            // the form is invalid.
+                            print('Button clicked!');
                           },
-                          child: const Text('Submit'),
                         ),
                       ],
                     ),

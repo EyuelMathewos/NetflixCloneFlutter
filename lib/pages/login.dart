@@ -67,11 +67,11 @@ class loginState extends State<Login> {
                                   borderSide: BorderSide(color: Colors.orange),
                                 ))),
                         TextFormField(
+                            obscureText: true,
                             decoration: InputDecoration(
                                 fillColor: Colors.black26,
                                 filled: true,
                                 hintText: 'password',
-                                obscureText: true,
                                 hintStyle: TextStyle(
                                   color: Colors.white,
                                   fontSize: 15,

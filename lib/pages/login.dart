@@ -86,7 +86,7 @@ class loginState extends State<Login> {
                                   borderSide: BorderSide(color: Colors.orange),
                                 ))),
                         ConstrainedBox(
-                          constraints: BoxConstraints.tightFor(width: size.width - 100, height: 30),
+                          constraints: BoxConstraints.tightFor(width: size.width - 60, height: 30),
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                               // background color
@@ -94,7 +94,11 @@ class loginState extends State<Login> {
                               padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
                               textStyle: TextStyle(fontSize: 15),
                             ),
-                            child: Text('I am a button'),
+                            child: Text('I am a button',
+                                style: TextStyle(
+                                  fontSize: 26,
+                                  color: Colors.white,
+                                )),
                             onPressed: () {
                               print('Button clicked!');
                             },

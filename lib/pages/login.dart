@@ -55,6 +55,7 @@ class loginState extends State<Login> {
                             decoration: InputDecoration(
                                 fillColor: Colors.black26,
                                 filled: true,
+                                color: Colors.white,
                                 hintText: 'email or phone number',
                                 hintStyle: TextStyle(
                                   color: Colors.white,

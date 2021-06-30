@@ -52,21 +52,22 @@ class loginState extends State<Login> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         TextFormField(
-                            decoration: InputDecoration(
-                                fillColor: Colors.black26,
-                                filled: true,
+                          decoration: InputDecoration(
+                              fillColor: Colors.black26,
+                              filled: true,
+                              hintText: 'email or phone number',
+                              hintStyle: TextStyle(
                                 color: Colors.white,
-                                hintText: 'email or phone number',
-                                hintStyle: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 15,
-                                ),
-                                enabledBorder: UnderlineInputBorder(
-                                  borderSide: BorderSide(color: Colors.white),
-                                ),
-                                focusedBorder: UnderlineInputBorder(
-                                  borderSide: BorderSide(color: Colors.orange),
-                                ))),
+                                fontSize: 15,
+                              ),
+                              enabledBorder: UnderlineInputBorder(
+                                borderSide: BorderSide(color: Colors.white),
+                              ),
+                              focusedBorder: UnderlineInputBorder(
+                                borderSide: BorderSide(color: Colors.orange),
+                              )),
+                          style: TextStyle(color: Colors.white),
+                        ),
                         TextFormField(
                             obscureText: true,
                             decoration: InputDecoration(

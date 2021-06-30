@@ -37,6 +37,11 @@ class loginState extends State<Login> {
               padding: EdgeInsets.all(10),
               child: Column(
                 children: [
+                  Text("Login",
+                      style: TextStyle(
+                        fontSize: 26,
+                        color: Colors.white,
+                      )),
                   Form(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,

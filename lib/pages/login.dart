@@ -117,9 +117,7 @@ class loginState extends State<Login> {
                                 )),
                             onPressed: () {
                               print('Button clicked!');
-                              if (_formKey.currentState!.validate()) {
-                                // Process data.
-                              }
+
                             },
                           ),
                         ),

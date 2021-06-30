@@ -86,6 +86,7 @@ class loginState extends State<Login> {
                                   borderSide: BorderSide(color: Colors.orange),
                                 ))),
                         ElevatedButton(
+                          width: 400,
                           onPressed: () {
                             // Validate will return true if the form is valid, or false if
                             // the form is invalid.

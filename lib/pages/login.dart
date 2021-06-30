@@ -33,7 +33,7 @@ class loginState extends State<Login> {
             height: 300,
             width: size.width - 20,
             decoration: BoxDecoration(
-              color: Colors.black,
+              color: Colors.black.withOpacity(0.85),
               borderRadius: BorderRadius.circular(6),
             ),
             child: Form(

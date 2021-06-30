@@ -97,7 +97,7 @@ class loginState extends State<Login> {
                               padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
                               textStyle: TextStyle(fontSize: 15),
                             ),
-                            child: Text('I am a button',
+                            child: Text('Sign In',
                                 style: TextStyle(
                                   fontSize: 26,
                                   color: Colors.white,

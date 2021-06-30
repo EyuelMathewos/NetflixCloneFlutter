@@ -33,7 +33,7 @@ class loginState extends State<Login> {
         ),
         Center(
           child: Container(
-            height: 500,
+            height: 300,
             width: size.width - 20,
             decoration: BoxDecoration(color: Colors.black.withOpacity(0.85)),
             child: Padding(

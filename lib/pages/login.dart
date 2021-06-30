@@ -89,8 +89,8 @@ class loginState extends State<Login> {
                           style: ElevatedButton.styleFrom(
                             // background color
                             primary: Colors.orange,
-                            padding: EdgeInsets.symmetric(horizontal: size.width - 100, vertical: 15),
-                            textStyle: TextStyle(fontSize: 20),
+                            padding: EdgeInsets.symmetric(horizontal: size.width - 100, vertical: 5),
+                            textStyle: TextStyle(fontSize: 15),
                           ),
                           child: Text('I am a button'),
                           onPressed: () {

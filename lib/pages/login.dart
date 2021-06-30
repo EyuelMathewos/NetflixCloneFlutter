@@ -41,10 +41,24 @@ class loginState extends State<Login> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   TextFormField(
-                    decoration: const InputDecoration(
-                      hintText: 'Enter your email',
-                    ),
-                  ),
+                      decoration: InputDecoration(
+                          fillColor: Colors.black26,
+                          filled: true,
+                          hintText: 'Search',
+                          hintStyle: TextStyle(
+                            color: Colors.white,
+                            fontSize: 15,
+                          ),
+                          prefixIcon: const Icon(
+                            Icons.search,
+                            color: Colors.white,
+                          ),
+                          enabledBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(color: Colors.white),
+                          ),
+                          focusedBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(color: Colors.red),
+                          ))),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16.0),
                     child: ElevatedButton(

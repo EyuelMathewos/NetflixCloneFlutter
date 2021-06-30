@@ -31,6 +31,7 @@ class loginState extends State<Login> {
         Center(
           child: Container(
             height: 300,
+            width: size.width - 20,
             decoration: BoxDecoration(
               image: DecorationImage(image: AssetImage("assets/images/banner.webp"), fit: BoxFit.cover),
               borderRadius: BorderRadius.circular(6),

@@ -40,7 +40,7 @@ class loginState extends State<Login> {
       key: _formKey,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
+        children: [
           TextFormField(
             decoration: const InputDecoration(
               hintText: 'Enter your email',

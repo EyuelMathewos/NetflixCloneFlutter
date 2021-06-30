@@ -60,6 +60,9 @@ class loginState extends State<Login> {
                                   color: Colors.white,
                                   fontSize: 15,
                                 ),
+                                enabledBorder: UnderlineInputBorder(
+                                  borderSide: BorderSide(color: Colors.white),
+                                ),
                                 focusedBorder: UnderlineInputBorder(
                                   borderSide: BorderSide(color: Colors.orange),
                                 ))),
@@ -68,6 +71,7 @@ class loginState extends State<Login> {
                                 fillColor: Colors.black26,
                                 filled: true,
                                 hintText: 'password',
+                                labelText: 'Password',
                                 hintStyle: TextStyle(
                                   color: Colors.white,
                                   fontSize: 15,

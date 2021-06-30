@@ -85,20 +85,21 @@ class loginState extends State<Login> {
                                 focusedBorder: UnderlineInputBorder(
                                   borderSide: BorderSide(color: Colors.orange),
                                 ))),
-                                ConstrainedBox(
-            constraints: BoxConstraints.tightFor(width: 300, height: 200),
-                        ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            // background color
-                            primary: Colors.orange,
-                            padding: EdgeInsets.symmetric(horizontal: size.width - 100, vertical: 5),
-                            textStyle: TextStyle(fontSize: 15),
+                        ConstrainedBox(
+                          constraints: BoxConstraints.tightFor(width: 300, height: 200),
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              // background color
+                              primary: Colors.orange,
+                              padding: EdgeInsets.symmetric(horizontal: size.width - 100, vertical: 5),
+                              textStyle: TextStyle(fontSize: 15),
+                            ),
+                            child: Text('I am a button'),
+                            onPressed: () {
+                              print('Button clicked!');
+                            },
                           ),
-                          child: Text('I am a button'),
-                          onPressed: () {
-                            print('Button clicked!');
-                          },
-                        ),),
+                        ),
                       ],
                     ),
                   ),

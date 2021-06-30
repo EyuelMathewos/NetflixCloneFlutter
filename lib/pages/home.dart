@@ -195,7 +195,9 @@ class homePageState extends State<Home> {
                                   color: Colors.white,
                                   size: 25,
                                 ),
-                                onPressed: null), //Icon button
+                                onPressed: () => {
+                                      print("hello world")
+                                    }), //Icon button
                           ],
                         ), // inner row
                       ],

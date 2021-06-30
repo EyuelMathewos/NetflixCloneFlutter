@@ -85,16 +85,13 @@ class loginState extends State<Login> {
                                 focusedBorder: UnderlineInputBorder(
                                   borderSide: BorderSide(color: Colors.orange),
                                 ))),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 16.0),
-                          child: ElevatedButton(
-                            widthFactor: 1,
-                            onPressed: () {
-                              // Validate will return true if the form is valid, or false if
-                              // the form is invalid.
-                            },
-                            child: const Text('Submit'),
-                          ),
+                        ElevatedButton(
+                          widthFactor: 1,
+                          onPressed: () {
+                            // Validate will return true if the form is valid, or false if
+                            // the form is invalid.
+                          },
+                          child: const Text('Submit'),
                         ),
                       ],
                     ),

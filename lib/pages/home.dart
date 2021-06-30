@@ -199,10 +199,7 @@ class homePageState extends State<Home> {
                                 onPressed: () => {
                                       Navigator.push(
                                         context,
-                                        MaterialPageRoute(
-                                            builder: (context) => Watch(urllink: [
-                                                  movieList[index]
-                                                ])),
+                                        MaterialPageRoute(builder: (context) => Login()),
                                       )
                                     }), //Icon button
                           ],

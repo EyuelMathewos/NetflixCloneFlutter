@@ -15,6 +15,15 @@ class Login extends StatefulWidget {
 class loginState extends State<Login> {
   GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   @override
+  void initState() {
+    // Create an store the VideoPlayerController. The VideoPlayerController
+    // offers several different constructors to play videos from assets, files,
+    // or the internet.
+
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(backgroundColor: Colors.black, resizeToAvoidBottomInset: false, body: getBody());
   }

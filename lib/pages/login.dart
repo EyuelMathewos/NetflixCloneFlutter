@@ -7,6 +7,7 @@ import 'package:netflixclone/JSON/movie.dart';
 
 class Login extends StatefulWidget {
   Login({Key key}) : super(key: key);
+  lobalKey<FormState> _formKey = GlobalKey<FormState>();
   @override
   loginState createState() => loginState();
 }

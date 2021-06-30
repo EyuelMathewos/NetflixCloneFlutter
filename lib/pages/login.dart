@@ -44,6 +44,9 @@ class loginState extends State<Login> {
                         fontSize: 26,
                         color: Colors.white,
                       )),
+                  SizedBox(
+                    height: 30,
+                  ),
                   Form(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,

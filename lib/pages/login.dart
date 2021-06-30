@@ -49,10 +49,6 @@ class loginState extends State<Login> {
                             color: Colors.white,
                             fontSize: 15,
                           ),
-                          prefixIcon: const Icon(
-                            Icons.search,
-                            color: Colors.white,
-                          ),
                           enabledBorder: UnderlineInputBorder(
                             borderSide: BorderSide(color: Colors.white),
                           ),

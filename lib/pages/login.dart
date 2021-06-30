@@ -58,9 +58,6 @@ class loginState extends State<Login> {
                       onPressed: () {
                         // Validate will return true if the form is valid, or false if
                         // the form is invalid.
-                        if (_formKey.currentState!.validate()) {
-                          // Process data.
-                        }
                       },
                       child: const Text('Submit'),
                     ),

@@ -6,6 +6,7 @@ import 'package:video_player/video_player.dart';
 import 'package:netflixclone/JSON/movie.dart';
 
 class Login extends StatefulWidget {
+  Login({Key key}) : super(key: key);
   @override
   loginState createState() => loginState();
 }
@@ -48,6 +49,7 @@ class loginState extends State<Login> {
                     height: 30,
                   ),
                   Form(
+                    key: _formKey,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[

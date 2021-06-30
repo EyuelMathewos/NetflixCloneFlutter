@@ -70,6 +70,7 @@ class loginState extends State<Login> {
                         ),
                         TextFormField(
                             obscureText: true,
+                            style: TextStyle(color: Colors.white),
                             decoration: InputDecoration(
                                 fillColor: Colors.black26,
                                 filled: true,

@@ -197,11 +197,13 @@ class homePageState extends State<Home> {
                                   size: 25,
                                 ),
                                 onPressed: () => {
-                                                          Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => Home()),
-                    );
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => Watch(urllink: [
+                                                  movieList[index]
+                                                ])),
+                                      )
                                     }), //Icon button
                           ],
                         ), // inner row

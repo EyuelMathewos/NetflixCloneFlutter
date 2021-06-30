@@ -30,12 +30,9 @@ class loginState extends State<Login> {
         ),
         Center(
           child: Container(
-            height: 300,
+            height: 200,
             width: size.width - 20,
-            decoration: BoxDecoration(
-              color: Colors.black.withOpacity(0.85),
-              borderRadius: BorderRadius.circular(6),
-            ),
+            decoration: BoxDecoration(color: Colors.black.withOpacity(0.85)),
             child: Form(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

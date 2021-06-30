@@ -27,7 +27,7 @@ class loginState extends State<Login> {
         Container(
           height: size.height,
           decoration: BoxDecoration(
-            image: DecorationImage(image: AssetImage("assets/images/assassinscreedcover.jpg"), fit: BoxFit.cover),
+            image: DecorationImage(image: AssetImage("assets/images/movieposter.jpg"), fit: BoxFit.cover),
             borderRadius: BorderRadius.circular(6),
           ),
         ),

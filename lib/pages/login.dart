@@ -37,7 +37,6 @@ class loginState extends State<Login> {
               borderRadius: BorderRadius.circular(6),
             ),
             child: Form(
-              key: _formKey,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[

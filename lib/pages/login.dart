@@ -89,7 +89,7 @@ class loginState extends State<Login> {
                           height: 8,
                         ),
                         ConstrainedBox(
-                          constraints: BoxConstraints.tightFor(width: size.width - 60, height: 40),
+                          constraints: BoxConstraints.tightFor( height: 40),
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                               // background color

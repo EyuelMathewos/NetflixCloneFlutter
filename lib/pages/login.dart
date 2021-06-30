@@ -19,7 +19,7 @@ class loginState extends State<Login> {
   Widget getBody() {
     var size = MediaQuery.of(context).size;
     return Padding(
-      padding: const EdgeInsets.only(bottom: 0),
+      padding: EdgeInsets.only(bottom: 0),
       child: Stack(children: [
         Container(
           height: size.height,
@@ -33,51 +33,54 @@ class loginState extends State<Login> {
             height: 200,
             width: size.width - 20,
             decoration: BoxDecoration(color: Colors.black.withOpacity(0.85)),
-            child: Form(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  TextFormField(
-                      decoration: InputDecoration(
-                          fillColor: Colors.black26,
-                          filled: true,
-                          hintText: 'email or phone number',
-                          hintStyle: TextStyle(
-                            color: Colors.white,
-                            fontSize: 15,
-                          ),
-                          enabledBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Colors.white),
-                          ),
-                          focusedBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Colors.orange),
-                          ))),
-                  TextFormField(
-                      decoration: InputDecoration(
-                          fillColor: Colors.black26,
-                          filled: true,
-                          hintText: 'password',
-                          hintStyle: TextStyle(
-                            color: Colors.white,
-                            fontSize: 15,
-                          ),
-                          enabledBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Colors.white),
-                          ),
-                          focusedBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Colors.orange),
-                          ))),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 16.0),
-                    child: ElevatedButton(
-                      onPressed: () {
-                        // Validate will return true if the form is valid, or false if
-                        // the form is invalid.
-                      },
-                      child: const Text('Submit'),
+            child: Padding(
+              padding: EdgeInsets.all(10),
+              child: Form(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    TextFormField(
+                        decoration: InputDecoration(
+                            fillColor: Colors.black26,
+                            filled: true,
+                            hintText: 'email or phone number',
+                            hintStyle: TextStyle(
+                              color: Colors.white,
+                              fontSize: 15,
+                            ),
+                            enabledBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(color: Colors.white),
+                            ),
+                            focusedBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(color: Colors.orange),
+                            ))),
+                    TextFormField(
+                        decoration: InputDecoration(
+                            fillColor: Colors.black26,
+                            filled: true,
+                            hintText: 'password',
+                            hintStyle: TextStyle(
+                              color: Colors.white,
+                              fontSize: 15,
+                            ),
+                            enabledBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(color: Colors.white),
+                            ),
+                            focusedBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(color: Colors.orange),
+                            ))),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 16.0),
+                      child: ElevatedButton(
+                        onPressed: () {
+                          // Validate will return true if the form is valid, or false if
+                          // the form is invalid.
+                        },
+                        child: const Text('Submit'),
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),

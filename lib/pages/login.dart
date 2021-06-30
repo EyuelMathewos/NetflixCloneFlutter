@@ -13,7 +13,7 @@ class Login extends StatefulWidget {
 class loginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: Colors.black, resizeToAvoidBottomInset: false, body: getBody());
+    return Scaffold(backgroundColor: Colors.black, resizeToAvoidBottomInset: true, body: getBody());
   }
 
   Widget getBody() {

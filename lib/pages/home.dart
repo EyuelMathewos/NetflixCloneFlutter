@@ -197,7 +197,11 @@ class homePageState extends State<Home> {
                                   size: 25,
                                 ),
                                 onPressed: () => {
-                                      print("hello world")
+                                                          Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Home()),
+                    );
                                     }), //Icon button
                           ],
                         ), // inner row

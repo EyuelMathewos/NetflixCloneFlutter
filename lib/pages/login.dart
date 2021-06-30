@@ -28,6 +28,15 @@ class loginState extends State<Login> {
             borderRadius: BorderRadius.circular(6),
           ),
         ),
+        Center(
+          child: Container(
+            height: 300,
+            decoration: BoxDecoration(
+              image: DecorationImage(image: AssetImage("assets/images/banner.webp"), fit: BoxFit.cover),
+              borderRadius: BorderRadius.circular(6),
+            ),
+          ),
+        ),
       ]),
     );
   }

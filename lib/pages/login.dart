@@ -55,6 +55,21 @@ class loginState extends State<Login> {
                           focusedBorder: UnderlineInputBorder(
                             borderSide: BorderSide(color: Colors.orange),
                           ))),
+                  TextFormField(
+                      decoration: InputDecoration(
+                          fillColor: Colors.black26,
+                          filled: true,
+                          hintText: 'password',
+                          hintStyle: TextStyle(
+                            color: Colors.white,
+                            fontSize: 15,
+                          ),
+                          enabledBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(color: Colors.white),
+                          ),
+                          focusedBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(color: Colors.orange),
+                          ))),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16.0),
                     child: ElevatedButton(

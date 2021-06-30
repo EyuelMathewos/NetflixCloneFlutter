@@ -33,7 +33,7 @@ class loginState extends State<Login> {
             height: 300,
             width: size.width - 20,
             decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage("assets/images/assassinscreedcover.jpg"), fit: BoxFit.cover),
+              color: Colors.black,
               borderRadius: BorderRadius.circular(6),
             ),
           ),

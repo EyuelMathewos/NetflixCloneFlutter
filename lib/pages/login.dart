@@ -13,13 +13,13 @@ class Login extends StatefulWidget {
 class loginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: Colors.black, resizeToAvoidBottomInset: true, body: getBody());
+    return Scaffold(backgroundColor: Colors.black, resizeToAvoidBottomInset: false, body: getBody());
   }
 
   Widget getBody() {
     var size = MediaQuery.of(context).size;
     return Padding(
-      padding: const EdgeInsets.only(bottom: 10),
+      padding: const EdgeInsets.only(bottom: 0),
       child: Stack(children: [
         Container(
           height: size.height,

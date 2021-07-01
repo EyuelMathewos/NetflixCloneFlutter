@@ -32,13 +32,11 @@ class searchState extends State<Search> {
         print("true");
         print(searchedList);
       }
-      this.setState(() {
-        movieSearchList = searchedList;
-      });
+      // this.setState(() {
+      //   movieSearchList = searchedList;
+      // });
     });
-    return [
-      {}
-    ];
+    return searchedList;
   }
 
   @override
@@ -132,7 +130,10 @@ class searchState extends State<Search> {
                       onChanged: (text) {
                         print('First text field: $text');
                         //print(movieSearchList);
-                        filtter(text);
+                        // filtter(text);
+                        setState(() {
+                          movieSearchList = filtter(text);
+                        });
                       },
                       onSubmitted: (String value) async {
                         await showDialog<void>(

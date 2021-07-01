@@ -25,7 +25,7 @@ class searchState extends State<Search> {
     print(value);
     List.generate(movieSearchList.length, (index) {
       print("********List values ${movieSearchList[index]['title']}");
-      if (movieSearchList[index]['title'].contains(value)) {
+      if (movieSearchList[index]['title'].toLowerCase().contains(value.toLowerCase())) {
         print("true");
       }
     });

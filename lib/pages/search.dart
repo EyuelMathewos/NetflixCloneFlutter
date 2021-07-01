@@ -32,9 +32,9 @@ class searchState extends State<Search> {
         print("true");
         print(searchedList);
       }
-      // setState(() {
-      //   movieSearchList = searchedList;
-      // });
+      this.setState(() {
+        movieSearchList = searchedList;
+      });
     });
     return [
       {}

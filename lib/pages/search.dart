@@ -30,6 +30,9 @@ class searchState extends State<Search> {
         searchedList.value.add(movieSearchList[index]);
         print("true");
       }
+      setState(() {
+        movieSearchList = searchedList;
+      });
     });
     return [
       {}

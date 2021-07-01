@@ -163,14 +163,14 @@ class searchState extends State<Search> {
                         bottom: 18,
                       ),
                       child: Column(
-                          children: List.generate(movieSearchList.length, (index) {
+                          children: List.generate(movie.length, (index) {
                         return InkWell(
                           onTap: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
                                   builder: (context) => Watch(urllink: [
-                                        movieSearchList[index]
+                                        movie[index]
                                       ])),
                             );
                             print("container clicked $index");

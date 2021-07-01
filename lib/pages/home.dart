@@ -84,7 +84,7 @@ class homePageState extends State<Home> {
                 Stack(children: [
                   Container(
                     height: 500,
-                    decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/banner.webp"), fit: BoxFit.cover)),
+                    decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/assassinscreedcover.jpg"), fit: BoxFit.cover)),
                   ), //container
                   Container(
                       height: 500,
@@ -98,7 +98,7 @@ class homePageState extends State<Home> {
                       height: 500,
                       width: size.width,
                       child: Column(mainAxisAlignment: MainAxisAlignment.end, crossAxisAlignment: CrossAxisAlignment.center, children: [
-                        Image.asset("assets/images/title_img.webp", width: 300),
+                        Image.asset("assets/images/assassinscreedtitle.png", width: 300),
                         SizedBox(
                           height: 15,
                         ),

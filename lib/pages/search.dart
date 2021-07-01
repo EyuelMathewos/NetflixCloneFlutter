@@ -131,7 +131,7 @@ class searchState extends State<Search> {
                         print('First text field: $text');
                         //print(movieSearchList);
                         // filtter(text);
-                        if (text > 0) {
+                        if (text.isEmpty) {
                           setState(() {
                             movieSearchList = filtter(text);
                           });

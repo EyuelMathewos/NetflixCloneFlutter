@@ -22,11 +22,14 @@ class searchState extends State<Search> {
   }
 
   List filtter(String value) {
+    List searchedList;
     print(value);
     List.generate(movieSearchList.length, (index) {
       print("********List values ${movieSearchList[index]['title']}");
       if (movieSearchList[index]['title'].toLowerCase().contains(value.toLowerCase())) {
+        searchedList.value.add(user)
         print("true");
+        print(searchedList.value.add(user));
       }
     });
     return [

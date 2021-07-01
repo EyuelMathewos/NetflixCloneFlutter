@@ -163,14 +163,14 @@ class searchState extends State<Search> {
                         bottom: 18,
                       ),
                       child: Column(
-                          children: List.generate(movie.length, (index) {
+                          children: List.generate(movieSearchList.length, (index) {
                         return InkWell(
                           onTap: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
                                   builder: (context) => Watch(urllink: [
-                                        movie[index]
+                                        movieSearchList[index]
                                       ])),
                             );
                             print("container clicked $index");
@@ -185,7 +185,7 @@ class searchState extends State<Search> {
                               child: Row(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
                                 Column(children: [
                                   Image.asset(
-                                    movie[index]["cover"],
+                                    movieSearchList[index]["cover"],
                                     width: 150,
                                     height: 80,
                                   )

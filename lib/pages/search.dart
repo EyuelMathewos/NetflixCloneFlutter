@@ -30,8 +30,8 @@ class searchState extends State<Search> {
       if (movieSearchList[index]['title'].toLowerCase().contains(value.toLowerCase())) {
         searchedList.add(movieSearchList[index]);
         print("true");
-        print(searchedList);
       }
+      print(searchedList);
     });
     return [
       {}

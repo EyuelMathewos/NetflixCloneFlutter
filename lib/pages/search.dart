@@ -22,17 +22,15 @@ class searchState extends State<Search> {
   }
 
   List filtter(String value) {
-    ValueNotifier<List<Map>> searchedList = ValueNotifier<List<Map>>([]);
+    // ValueNotifier<List<Map>> searchedList = ValueNotifier<List<Map>>([]);
+    List searchedList;
     print(value);
     List.generate(movieSearchList.length, (index) {
       print("********List values ${movieSearchList[index]['title']}");
       if (movieSearchList[index]['title'].toLowerCase().contains(value.toLowerCase())) {
-        searchedList.value.add(movieSearchList[index]);
+        searchedList.add(movieSearchList[index]);
         print("true");
       }
-      setState(() {
-        movieSearchList = searchedList;
-      });
     });
     return [
       {}

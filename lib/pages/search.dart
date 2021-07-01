@@ -164,14 +164,14 @@ class searchState extends State<Search> {
                         bottom: 18,
                       ),
                       child: Column(
-                          children: List.generate(movie.length, (index) {
+                          children: List.generate(movieSearchList.length, (index) {
                         return InkWell(
                           onTap: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
                                   builder: (context) => Watch(urllink: [
-                                        movie[index]
+                                        movieSearchList[index]
                                       ])),
                             );
                             print("container clicked $index");
@@ -198,7 +198,7 @@ class searchState extends State<Search> {
                                       top: 0,
                                     ),
                                     child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
-                                      Text(movie[index]["title"],
+                                      Text(movieSearchList[index]["title"],
                                           style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 15,
@@ -211,7 +211,7 @@ class searchState extends State<Search> {
                                         ),
                                         child: Container(
                                           width: 190,
-                                          child: Text(movie[index]["about"],
+                                          child: Text(movieSearchList[index]["about"],
                                               style: TextStyle(
                                                 color: Colors.white,
                                                 fontSize: 8,

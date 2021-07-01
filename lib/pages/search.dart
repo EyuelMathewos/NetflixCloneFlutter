@@ -22,7 +22,7 @@ class searchState extends State<Search> {
   }
 
   List filtter(String value) {
-    List searchedList;
+    ValueNotifier<List<Map>> searchedList = ValueNotifier<List<Map>>([]);
     print(value);
     List.generate(movieSearchList.length, (index) {
       print("********List values ${movieSearchList[index]['title']}");

@@ -13,10 +13,12 @@ class Search extends StatefulWidget {
 
 class searchState extends State<Search> {
   TextEditingController _controller;
+  List movieSearchList;
   @override
   void initState() {
     super.initState();
     _controller = TextEditingController();
+    movieSearchList = movie;
   }
 
   @override
@@ -109,6 +111,7 @@ class searchState extends State<Search> {
                           )),
                       onChanged: (text) {
                         print('First text field: $text');
+                        print(movieSearchList);
                       },
                       onSubmitted: (String value) async {
                         await showDialog<void>(

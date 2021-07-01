@@ -132,7 +132,7 @@ class searchState extends State<Search> {
                         //print(movieSearchList);
                         // filtter(text);
                         setState(() {
-                          movieSearchList = filtter("ve");
+                          movieSearchList = filtter($text);
                         });
                       },
                       onSubmitted: (String value) async {

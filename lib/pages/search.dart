@@ -21,6 +21,10 @@ class searchState extends State<Search> {
     movieSearchList = movie;
   }
 
+  void filtter(String value) {
+    print(value);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(backgroundColor: Colors.black, resizeToAvoidBottomInset: false, body: getBody());
@@ -111,7 +115,8 @@ class searchState extends State<Search> {
                           )),
                       onChanged: (text) {
                         print('First text field: $text');
-                        print(movieSearchList);
+                        //print(movieSearchList);
+                        filtter(text);
                       },
                       onSubmitted: (String value) async {
                         await showDialog<void>(

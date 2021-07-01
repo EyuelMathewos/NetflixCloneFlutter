@@ -4,6 +4,7 @@ import 'package:netflixclone/JSON/menu.dart';
 import 'package:netflixclone/pages/root.dart';
 import 'package:video_player/video_player.dart';
 import 'package:netflixclone/JSON/movie.dart';
+import 'package:netflixclone/pages/watch.dart';
 
 class Search extends StatefulWidget {
   @override
@@ -141,6 +142,13 @@ class searchState extends State<Search> {
                           children: List.generate(movie.length, (index) {
                         return InkWell(
                           onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Watch(urllink: [
+                                        movie[index]
+                                      ])),
+                            );
                             print("container clicked $index");
                           },
                           child: new Container(

@@ -83,7 +83,7 @@ class homePageState extends State<Home> {
               children: [
                 Stack(children: [
                   Container(
-                    height: size.height - 150,
+                    height: size.height - 140,
                     decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/banner.webp"), fit: BoxFit.cover)),
                   ), //container
                   Container(

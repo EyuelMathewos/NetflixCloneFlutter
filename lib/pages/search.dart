@@ -133,6 +133,10 @@ class searchState extends State<Search> {
                         // filtter(text);
                         if (text.isEmpty) {
                           setState(() {
+                            movieSearchList = movie;
+                          });
+                        }else{
+                                                    setState(() {
                             movieSearchList = filtter(text);
                           });
                         }

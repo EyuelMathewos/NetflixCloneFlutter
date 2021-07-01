@@ -131,9 +131,11 @@ class searchState extends State<Search> {
                         print('First text field: $text');
                         //print(movieSearchList);
                         // filtter(text);
-                        setState(() {
-                          movieSearchList = filtter(text);
-                        });
+                        if (text > 0) {
+                          setState(() {
+                            movieSearchList = filtter(text);
+                          });
+                        }
                       },
                       onSubmitted: (String value) async {
                         await showDialog<void>(

@@ -24,9 +24,11 @@ class searchState extends State<Search> {
   List filtter(String value) {
     print(value);
     List.generate(movieSearchList.length, (index) {
-         print("********List values ${movieSearchList[index]['title']}");
-    }
-    return [{}];
+      print("********List values ${movieSearchList[index]['title']}");
+    });
+    return [
+      {}
+    ];
   }
 
   @override

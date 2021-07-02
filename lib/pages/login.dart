@@ -13,7 +13,7 @@ class Login extends StatefulWidget {
 }
 
 class loginState extends State<Login> {
-
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(backgroundColor: Colors.black, resizeToAvoidBottomInset: false, body: getBody());
@@ -51,6 +51,7 @@ class loginState extends State<Login> {
                     height: 30,
                   ),
                   Form(
+                    key: _formKey,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
@@ -107,7 +108,6 @@ class loginState extends State<Login> {
                                 )),
                             onPressed: () {
                               print('Button clicked!');
-
                             },
                           ),
                         ),

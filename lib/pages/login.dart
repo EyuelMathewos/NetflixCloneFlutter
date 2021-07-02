@@ -107,10 +107,11 @@ class loginState extends State<Login> {
                                   color: Colors.white,
                                 )),
                             onPressed: () {
+                              print('Button clicked!');
                               if (_formKey.currentState.validate()) {
                                 // Process data.
+                                print(_formKey);
                               }
-                              print('Button clicked!');
                             },
                           ),
                         ),
